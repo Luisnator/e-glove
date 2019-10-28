@@ -18,4 +18,4 @@
 
 
 **Extend Serial I/O (1 mal)**
-https://m5stack.com/collections/m5-unit/products/official-extend-serial-i-o-unit
+- Link: https://m5stack.com/collections/m5-unit/products/official-extend-serial-i-o-unit
