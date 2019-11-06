@@ -1,8 +1,5 @@
 #include "MPU9250.h"
 #include <M5Stack.h>
-#include "esp32_digital_led_lib.h"
-#define RGB_PIN 26
-#define NUMPIXELS 5
 MPU9250 mpu;
 void setup()
 {
