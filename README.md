@@ -19,3 +19,6 @@
 
 **Extend Serial I/O (1 mal)**
 - Link: https://m5stack.com/collections/m5-unit/products/official-extend-serial-i-o-unit
+
+**Kapazitive Sensoren**
+- debo touch
