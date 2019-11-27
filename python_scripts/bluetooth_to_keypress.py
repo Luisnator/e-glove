@@ -1,5 +1,7 @@
 import time
 import pyautogui
+import pygatt
+from binascii import hexlify
 
 def doKeypress(input):
     # If "Next Page"
@@ -54,3 +56,22 @@ def doKeypress(input):
     elif input == 14:
         pyautogui.press('down')
 
+value = 0
+
+def handle_data(handle, raw_value):
+    """
+    handle -- integer, characteristic read handle the data was received on
+    raw_value -- bytearray, the data returned in the notification
+    """
+    value = hexlify(raw_value)
+
+try:
+    adapter.start()
+    device = adapter.connect('16:46:1A:83:19:66')
+
+    device.subscribe("438366C1-9FAE-4B36-9575-71762012041B",
+                     callback=handle_data)
+    while True:
+        print("Received data: %s" % value)
+finally:
+    adapter.stop()
