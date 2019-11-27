@@ -93,6 +93,7 @@ void loop() {
     if (deviceConnected) {
         pCharacteristic->setValue((uint8_t*)&value, 4);
         pCharacteristic->notify();
+        Serial.println("Hello");
         value++;
         delay(3); // bluetooth stack will go into congestion, if too many packets are sent, in 6 hours test i was able to go as low as 3ms
     }

@@ -56,7 +56,11 @@ def doKeypress(input):
     elif input == 14:
         pyautogui.press('down')
 
+adapter = pygatt.BGAPIBackend(serial_port='COM5')
+#adapter = pygatt.GATTToolBackend()
 value = 0
+deviceid = '84:0d:8e:25:a0:aa'     #'16:46:1A:83:19:66'
+characteristicid = 'beb5483e-36e1-4688-b7f5-ea07361b26a8'    #"438366C1-9FAE-4B36-9575-71762012041B"
 
 def handle_data(handle, raw_value):
     """
@@ -67,9 +71,9 @@ def handle_data(handle, raw_value):
 
 try:
     adapter.start()
-    device = adapter.connect('16:46:1A:83:19:66')
+    device = adapter.connect(deviceid)
 
-    device.subscribe("438366C1-9FAE-4B36-9575-71762012041B",
+    device.subscribe(characteristicid,
                      callback=handle_data)
     while True:
         print("Received data: %s" % value)
