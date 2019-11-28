@@ -1,7 +1,15 @@
 import time
 import pyautogui
-import pygatt
-from binascii import hexlify
+import logging
+import asyncio
+import platform
+import time
+import uuid
+
+import Adafruit_BluefruitLE
+from bleak import BleakClient
+from bleak import _logger as logger
+logging.basicConfig()
 
 def doKeypress(input):
     # If "Next Page"
@@ -56,26 +64,42 @@ def doKeypress(input):
     elif input == 14:
         pyautogui.press('down')
 
-adapter = pygatt.BGAPIBackend(serial_port='COM5')
-#adapter = pygatt.GATTToolBackend()
-value = 0
-deviceid = '84:0d:8e:25:a0:aa'     #'16:46:1A:83:19:66'
-characteristicid = 'beb5483e-36e1-4688-b7f5-ea07361b26a8'    #"438366C1-9FAE-4B36-9575-71762012041B"
 
-def handle_data(handle, raw_value):
-    """
-    handle -- integer, characteristic read handle the data was received on
-    raw_value -- bytearray, the data returned in the notification
-    """
-    value = hexlify(raw_value)
 
-try:
-    adapter.start()
-    device = adapter.connect(deviceid)
 
-    device.subscribe(characteristicid,
-                     callback=handle_data)
-    while True:
-        print("Received data: %s" % value)
-finally:
-    adapter.stop()
+# Enable debug output.
+#logging.basicConfig(level=logging.DEBUG)
+
+SERVICE_UUID = uuid.UUID('d9c0fc91-b16e-4517-94a5-65eb152ccd44')
+CHAR_UUID    = uuid.UUID('88f72c4d-4632-4dc6-81d8-6d5afa20e03a')
+
+import sys
+
+import bluetooth
+
+if len(sys.argv) < 2:
+    print("Usage: sdp-browse.py <addr>")
+    print("   addr - can be a bluetooth address, \"localhost\", or \"all\"")
+    sys.exit(2)
+
+target = sys.argv[1]
+if target == "all":
+    target = None
+
+services = bluetooth.find_service(address=target)
+
+if len(services) > 0:
+    print("Found {} services on {}.".format(len(services), sys.argv[1]))
+else:
+    print("No services found.")
+
+for svc in services:
+    print("\nService Name:", svc["name"])
+    print("    Host:       ", svc["host"])
+    print("    Description:", svc["description"])
+    print("    Provided By:", svc["provider"])
+    print("    Protocol:   ", svc["protocol"])
+    print("    channel/PSM:", svc["port"])
+    print("    svc classes:", svc["service-classes"])
+    print("    profiles:   ", svc["profiles"])
+    print("    service id: ", svc["service-id"])
