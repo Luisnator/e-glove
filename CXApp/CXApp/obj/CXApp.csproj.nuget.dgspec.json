@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\GitHub\\e-glove\\CSApp\\CXApp\\CXApp\\CXApp.csproj": {}
+    "C:\\Projects\\GitHub\\e-glove\\CXApp\\CXApp\\CXApp.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\GitHub\\e-glove\\CSApp\\CXApp\\CXApp\\CXApp.csproj": {
+    "C:\\Projects\\GitHub\\e-glove\\CXApp\\CXApp\\CXApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\GitHub\\e-glove\\CSApp\\CXApp\\CXApp\\CXApp.csproj",
+        "projectUniqueName": "C:\\Projects\\GitHub\\e-glove\\CXApp\\CXApp\\CXApp.csproj",
         "projectName": "CXApp",
-        "projectPath": "C:\\Projects\\GitHub\\e-glove\\CSApp\\CXApp\\CXApp\\CXApp.csproj",
+        "projectPath": "C:\\Projects\\GitHub\\e-glove\\CXApp\\CXApp\\CXApp.csproj",
         "packagesPath": "C:\\Users\\Phill\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\GitHub\\e-glove\\CSApp\\CXApp\\CXApp\\obj\\",
+        "outputPath": "C:\\Projects\\GitHub\\e-glove\\CXApp\\CXApp\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

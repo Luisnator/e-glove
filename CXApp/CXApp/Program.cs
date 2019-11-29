@@ -2,6 +2,7 @@
 using Windows.Devices.Bluetooth;
 using Windows.Devices.Bluetooth.GenericAttributeProfile;
 using Windows.Devices.Enumeration;
+using Windows.Storage.Streams;
 
 // This example code shows how you could implement the required main function for a 
 // Console UWP Application. You can replace all the code inside Main with your own custom code.
@@ -15,6 +16,7 @@ namespace CXApp
     class Program
     {
         static private String serviceuuid = "4fafc201-1fb5-459e-8fcc-c5c9c331914b";
+        static private String characteristicuuid = "beb5483e-36e1-4688-b7f5-ea07361b26a8";
         static void Main(string[] args)
         {
             Console.WriteLine("Starting");
@@ -54,14 +56,15 @@ namespace CXApp
             Console.WriteLine("Enum complete");
         }
 
-        private static void DeviceWatcher_Removed(DeviceWatcher sender, DeviceInformationUpdate args)
+        private static void DeviceWatcher_Removed(DeviceWatcher sender, DeviceInformationUpdate device)
         {
-            Console.WriteLine("Removed");
+            
+            Console.WriteLine(String.Format("Removed Device with ID: {0}", device.Id));
         }
 
-        private static void DeviceWatcher_Updated(DeviceWatcher sender, DeviceInformationUpdate args)
+        private static void DeviceWatcher_Updated(DeviceWatcher sender, DeviceInformationUpdate device)
         {
-            Console.WriteLine("Updated");
+            Console.WriteLine(String.Format("Updated Device with ID: {0}", device.Id));
         }
 
         private static void DeviceWatcher_Added(DeviceWatcher sender, DeviceInformation deviceInfo)
@@ -94,6 +97,7 @@ namespace CXApp
 
         async static void SubscribeToServiceAsync(GattDeviceService service)
         {
+            Console.WriteLine(String.Format("Subscribing to: {0}", service.Uuid));
             GattCharacteristicsResult result = await service.GetCharacteristicsAsync();
 
             if (result.Status == GattCommunicationStatus.Success)
@@ -102,9 +106,31 @@ namespace CXApp
 
                 for (int i = 0; i < characteristics.Count; i++)
                 {
-                    Console.WriteLine(characteristics[i].Uuid);
+                    if (characteristics[i].Uuid.Equals(new Guid(characteristicuuid)))
+                    {
+                        GattCommunicationStatus status = await characteristics[i].WriteClientCharacteristicConfigurationDescriptorAsync(
+                        GattClientCharacteristicConfigurationDescriptorValue.Notify);
+                        if (status == GattCommunicationStatus.Success)
+                        {
+                            Console.WriteLine("Server has been informed of clients interest.");
+                        }
+
+                        characteristics[i].ValueChanged += Characteristic_ValueChanged;
+                        // ... 
+
+                        
+                    }
                 }
             }
+        }
+
+        static void Characteristic_ValueChanged(GattCharacteristic sender, GattValueChangedEventArgs args)
+        {
+            // An Indicate or Notify reported that the value has changed.
+            var reader = DataReader.FromBuffer(args.CharacteristicValue);
+            // Parse the data however required.
+            String  value = reader.ReadString(17);
+            Console.WriteLine(value);
         }
     }
 }

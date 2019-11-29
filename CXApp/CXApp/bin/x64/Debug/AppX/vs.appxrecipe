@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>5da15b29-0578-4027-ba20-7a38fbc9fcb2</PackageIdentityName>
     <PackageIdentityPublisher>CN=Phill</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Projects\GitHub\e-glove\CXApp\CXApp\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>F40557F4C4FC5C71E8B17C6AC25B0DC0B18476BB505DF1E5C3C1635776ECE7CB</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>5da15b29-0578-4027-ba20-7a38fbc9fcb2_1.0.0.0_x64__7qtwdhkt506xt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>5da15b29-0578-4027-ba20-7a38fbc9fcb2_7qtwdhkt506xt!App</RegisteredUserModeAppID>
@@ -27,18 +27,18 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-29T19:27:37.204</Modified>
+      <Modified>2019-11-29T20:10:54.218</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\bin\x64\Debug\CXApp.exe">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\CXApp.exe">
       <PackagePath>entrypoint\CXApp.exe</PackagePath>
-      <Modified>2019-11-29T19:27:36.579</Modified>
+      <Modified>2019-11-29T20:10:53.642</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\bin\x64\Debug\CXApp.exe.config">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\CXApp.exe.config">
       <PackagePath>CXApp.exe.config</PackagePath>
       <Modified>2019-11-29T15:40:07.402</Modified>
     </AppxPackagedFile>
@@ -50,45 +50,45 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T17:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2019-11-29T15:21:27.528</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\Square310x310Logo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\Square310x310Logo.png">
       <PackagePath>Assets\Square310x310Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-29T15:19:05.009</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\Square44x44Logo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\Square44x44Logo.png">
       <PackagePath>Assets\Square44x44Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-29T15:19:05.011</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\Square71x71Logo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\Square71x71Logo.png">
       <PackagePath>Assets\Square71x71Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-29T15:19:05.012</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-29T15:19:05.014</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\LockScreenLogo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\LockScreenLogo.png">
       <PackagePath>Assets\LockScreenLogo.png</PackagePath>
       <Modified>2019-11-29T15:19:05.005</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-29T15:19:05.006</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\Square150x150Logo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\Square150x150Logo.png">
       <PackagePath>Assets\Square150x150Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-29T15:19:05.008</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\Wide310x150Logo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\Wide310x150Logo.png">
       <PackagePath>Assets\Wide310x150Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-29T15:19:05.017</Modified>
@@ -97,13 +97,13 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-18T16:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <Modified>2019-11-29T19:02:37.664</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\bin\x64\Debug\Core\CXApp.exe">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\Core\CXApp.exe">
       <PackagePath>CXApp.exe</PackagePath>
-      <Modified>2019-11-29T19:27:37.196</Modified>
+      <Modified>2019-11-29T20:10:54.212</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
