@@ -30,17 +30,21 @@
     <AppXManifest Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-29T20:10:54.218</Modified>
+      <Modified>2019-11-29T22:46:05.723</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\CXApp.exe">
       <PackagePath>entrypoint\CXApp.exe</PackagePath>
-      <Modified>2019-11-29T20:10:53.642</Modified>
+      <Modified>2019-11-29T22:46:05.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\CXApp.exe.config">
       <PackagePath>CXApp.exe.config</PackagePath>
-      <Modified>2019-11-29T15:40:07.402</Modified>
+      <Modified>2019-11-29T21:33:41.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\inputsimulator\1.0.4\lib\net20\WindowsInput.dll">
+      <PackagePath>WindowsInput.dll</PackagePath>
+      <Modified>2013-12-12T10:46:56.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -99,11 +103,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-11-29T19:02:37.664</Modified>
+      <Modified>2019-11-29T21:50:00.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\Core\CXApp.exe">
       <PackagePath>CXApp.exe</PackagePath>
-      <Modified>2019-11-29T20:10:54.212</Modified>
+      <Modified>2019-11-29T22:46:05.717</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

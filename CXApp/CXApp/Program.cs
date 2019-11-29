@@ -3,6 +3,8 @@ using Windows.Devices.Bluetooth;
 using Windows.Devices.Bluetooth.GenericAttributeProfile;
 using Windows.Devices.Enumeration;
 using Windows.Storage.Streams;
+using WindowsInput.Native;
+using WindowsInput;
 
 // This example code shows how you could implement the required main function for a 
 // Console UWP Application. You can replace all the code inside Main with your own custom code.
@@ -129,8 +131,19 @@ namespace CXApp
             // An Indicate or Notify reported that the value has changed.
             var reader = DataReader.FromBuffer(args.CharacteristicValue);
             // Parse the data however required.
-            String  value = reader.ReadString(17);
+            int value = int.Parse(reader.ReadString(2));
             Console.WriteLine(value);
+            GenerateKeypress(value);
+        }
+
+        static void GenerateKeypress(int val)
+        {
+            InputSimulator sim = new InputSimulator();
+
+            if (val == 1)
+            {
+                sim.Keyboard.KeyPress(VirtualKeyCode.SPACE);
+            }
         }
     }
 }

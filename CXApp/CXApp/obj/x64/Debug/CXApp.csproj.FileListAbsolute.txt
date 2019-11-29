@@ -64,3 +64,4 @@ C:\Projects\GitHub\e-glove\CXApp\CXApp\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Projects\GitHub\e-glove\CXApp\CXApp\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Projects\GitHub\e-glove\CXApp\CXApp\obj\x64\Debug\ProjectArchitectures.txt
 C:\Projects\GitHub\e-glove\CXApp\CXApp\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885274160000000.json
+C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\WindowsInput.dll

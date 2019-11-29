@@ -31,6 +31,9 @@
     <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\CXApp.exe.config">
       <PackagePath>CXApp.exe.config</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\inputsimulator\1.0.4\lib\net20\WindowsInput.dll">
+      <PackagePath>WindowsInput.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>

@@ -124,6 +124,9 @@
     <Content Include="Assets\Wide310x150Logo.png" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="InputSimulator">
+      <Version>1.0.4</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.9</Version>
     </PackageReference>
