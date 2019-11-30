@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5" xmlns:desktop4="http://schemas.microsoft.com/appx/manifest/desktop/windows10/4" xmlns:iot2="http://schemas.microsoft.com/appx/manifest/iot/windows10/2" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap mp uap5 iot2 desktop4 rescap build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  <!--
+    DIESE PAKETMANIFESTDATEI WIRD DURCH DEN BUILDVORGANG GENERIERT.
+
+    Änderungen an dieser Datei gehen verloren, wenn sie erneut erstellt wird. Um Fehler in dieser Datei zu beheben, bearbeiten Sie die ".appxmanifest"-Quelldatei.
+
+    Weitere Informationen zu Paketmanifestdateien finden Sie unter http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="5da15b29-0578-4027-ba20-7a38fbc9fcb2" Publisher="CN=Phill" Version="1.0.0.0" ProcessorArchitecture="x64" />
+  <mp:PhoneIdentity PhoneProductId="5da15b29-0578-4027-ba20-7a38fbc9fcb2" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>CXApp</DisplayName>
+    <PublisherDisplayName>Phill</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.18362.0" />
+    <PackageDependency Name="Microsoft.NET.CoreRuntime.2.2" MinVersion="2.2.27902.3" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.NET.CoreFramework.Debug.2.2" MinVersion="2.2.27909.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="DE-DE" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="CXApp.exe" EntryPoint="CXApp.Program" desktop4:SupportsMultipleInstances="true" desktop4:Subsystem="console" iot2:SupportsMultipleInstances="true" iot2:Subsystem="console">
+      <uap:VisualElements DisplayName="CXApp" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="CXApp" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" Square71x71Logo="Assets\Square71x71Logo.png"></uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+      <Extensions>
+        <uap5:Extension Category="windows.appExecutionAlias" Executable="CXApp.exe" EntryPoint="CXApp.Program">
+          <uap5:AppExecutionAlias desktop4:Subsystem="console" iot2:Subsystem="console">
+            <uap5:ExecutionAlias Alias="CXApp.exe" />
+          </uap5:AppExecutionAlias>
+        </uap5:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <rescap:Capability Name="inputInjectionBrokered" />
+    <DeviceCapability Name="bluetooth" />
+  </Capabilities>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>CLRHost.dll</Path>
+        <ActivatableClass ActivatableClassId="Microsoft.UI.Xaml.Markup.ReflectionXamlMetadataProvider" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+  <build:Metadata>
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
+    <build:Item Name="VisualStudio" Version="16.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2019" />
+    <build:Item Name="OperatingSystem" Version="10.0.18362.476 (WinBuild.160101.0800)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.29311.281" />
+    <build:Item Name="ProjectGUID" Value="{C40E9050-1A22-4366-89E7-3CD9C2D0215F}" />
+    <build:Item Name="OptimizingToolset" Value="None" />
+    <build:Item Name="TargetRuntime" Value="Managed" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="10.0.18362.1" />
+    <build:Item Name="MakePri.exe" Version="10.0.18362.1 (WinBuild.160101.0800)" />
+  </build:Metadata>
+</Package>
