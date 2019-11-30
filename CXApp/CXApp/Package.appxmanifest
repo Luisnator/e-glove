@@ -6,9 +6,11 @@
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5" 
   xmlns:desktop4="http://schemas.microsoft.com/appx/manifest/desktop/windows10/4" 
-  xmlns:iot2="http://schemas.microsoft.com/appx/manifest/iot/windows10/2" 
-  IgnorableNamespaces="uap mp uap5 iot2 desktop4">
-
+  xmlns:iot2="http://schemas.microsoft.com/appx/manifest/iot/windows10/2"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap mp uap5 iot2 desktop4 rescap"
+  >
+  
   <Identity
     Name="5da15b29-0578-4027-ba20-7a38fbc9fcb2"
     Publisher="CN=Phill"
@@ -69,6 +71,8 @@
 
   <Capabilities>
     <Capability Name="internetClient" />
+    
+    <rescap:Capability Name="inputInjectionBrokered" />
     <DeviceCapability Name="bluetooth"/>
   </Capabilities>
 </Package>

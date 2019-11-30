@@ -11,6 +11,21 @@
           "lib/net20/WindowsInput.dll": {}
         }
       },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -315,6 +330,15 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.CodeDom/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm": {
@@ -325,6 +349,21 @@
         },
         "runtime": {
           "lib/net20/WindowsInput.dll": {}
+        }
+      },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -810,6 +849,15 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.CodeDom/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm-aot": {
@@ -820,6 +868,21 @@
         },
         "runtime": {
           "lib/net20/WindowsInput.dll": {}
+        }
+      },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -1306,6 +1369,15 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.CodeDom/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm64-aot": {
@@ -1316,6 +1388,21 @@
         },
         "runtime": {
           "lib/net20/WindowsInput.dll": {}
+        }
+      },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -1802,6 +1889,15 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.CodeDom/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x64": {
@@ -1812,6 +1908,21 @@
         },
         "runtime": {
           "lib/net20/WindowsInput.dll": {}
+        }
+      },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -2297,6 +2408,15 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.CodeDom/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x64-aot": {
@@ -2307,6 +2427,21 @@
         },
         "runtime": {
           "lib/net20/WindowsInput.dll": {}
+        }
+      },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -2793,6 +2928,15 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.CodeDom/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x86": {
@@ -2803,6 +2947,21 @@
         },
         "runtime": {
           "lib/net20/WindowsInput.dll": {}
+        }
+      },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -3288,6 +3447,15 @@
         "native": {
           "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll": {}
         }
+      },
+      "System.CodeDom/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x86-aot": {
@@ -3298,6 +3466,21 @@
         },
         "runtime": {
           "lib/net20/WindowsInput.dll": {}
+        }
+      },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -3784,6 +3967,15 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.CodeDom/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        }
       }
     }
   },
@@ -3799,6 +3991,39 @@
         "inputsimulator.nuspec",
         "lib/net20/WindowsInput.dll",
         "lib/net20/WindowsInput.xml"
+      ]
+    },
+    "IronPython/2.7.9": {
+      "sha512": "CXQT1XUPKapVZ1r4coR+lFlC1FEsI4sDJg/9iSug/fUnWuYZ8APAPFutPG09T2uwcsWk40s4ckqO27/dbsA6lw==",
+      "type": "package",
+      "path": "ironpython/2.7.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "ironpython.2.7.9.nupkg.sha512",
+        "ironpython.nuspec",
+        "lib/net45/IronPython.Modules.dll",
+        "lib/net45/IronPython.Modules.xml",
+        "lib/net45/IronPython.SQLite.dll",
+        "lib/net45/IronPython.SQLite.xml",
+        "lib/net45/IronPython.Wpf.dll",
+        "lib/net45/IronPython.Wpf.xml",
+        "lib/net45/IronPython.dll",
+        "lib/net45/IronPython.xml",
+        "lib/netcoreapp2.0/IronPython.Modules.dll",
+        "lib/netcoreapp2.0/IronPython.Modules.xml",
+        "lib/netcoreapp2.0/IronPython.SQLite.dll",
+        "lib/netcoreapp2.0/IronPython.SQLite.xml",
+        "lib/netcoreapp2.0/IronPython.dll",
+        "lib/netcoreapp2.0/IronPython.xml",
+        "lib/netcoreapp2.1/IronPython.Modules.dll",
+        "lib/netcoreapp2.1/IronPython.Modules.xml",
+        "lib/netcoreapp2.1/IronPython.SQLite.dll",
+        "lib/netcoreapp2.1/IronPython.SQLite.xml",
+        "lib/netcoreapp2.1/IronPython.dll",
+        "lib/netcoreapp2.1/IronPython.xml"
       ]
     },
     "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -8228,12 +8453,37 @@
         "runtimes/win10-x86/lib/uap10.0.15138/netstandard.dll",
         "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
+    },
+    "System.CodeDom/4.6.0": {
+      "sha512": "ArWGZOxPhOaJUd4YgvbTxGZDbVDJHPAOQNiJIpbRDPW6v2NT5xkallQv1zpu8Rwwb5Z3iZ1jwWA4gSQuWgR+jw==",
+      "type": "package",
+      "path": "system.codedom/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.CodeDom.dll",
+        "lib/net461/System.CodeDom.xml",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.xml",
+        "ref/net461/System.CodeDom.dll",
+        "ref/net461/System.CodeDom.xml",
+        "ref/netstandard2.0/System.CodeDom.dll",
+        "ref/netstandard2.0/System.CodeDom.xml",
+        "system.codedom.4.6.0.nupkg.sha512",
+        "system.codedom.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
       "InputSimulator >= 1.0.4",
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.9"
+      "IronPython >= 2.7.9",
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.9",
+      "System.CodeDom >= 4.6.0"
     ]
   },
   "packageFolders": {
@@ -8277,9 +8527,17 @@
             "target": "Package",
             "version": "[1.0.4, )"
           },
+          "IronPython": {
+            "target": "Package",
+            "version": "[2.7.9, )"
+          },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.2.9, )"
+          },
+          "System.CodeDom": {
+            "target": "Package",
+            "version": "[4.6.0, )"
           }
         },
         "imports": [
@@ -8320,6 +8578,16 @@
       "warningLevel": 1,
       "message": "Das Paket \"InputSimulator 1.0.4\" wurde nicht mit dem Projektzielframework \"UAP,Version=v10.0.17763\", sondern mit \".NETFramework,Version=v4.6.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
       "libraryId": "InputSimulator",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Das Paket \"IronPython 2.7.9\" wurde nicht mit dem Projektzielframework \"UAP,Version=v10.0.17763\", sondern mit \".NETFramework,Version=v4.6.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "libraryId": "IronPython",
       "targetGraphs": [
         "UAP,Version=v10.0.17763"
       ]

@@ -10,74 +10,101 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>5da15b29-0578-4027-ba20-7a38fbc9fcb2</PackageIdentityName>
     <PackageIdentityPublisher>CN=Phill</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Projects\GitHub\e-glove\CXApp\CXApp\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\bin\x86\Debug\CXApp.exe">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x86\Debug\CXApp.exe">
       <PackagePath>entrypoint\CXApp.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\bin\x86\Debug\CXApp.exe.config">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x86\Debug\CXApp.exe.config">
       <PackagePath>CXApp.exe.config</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\dynamiclanguageruntime\1.2.2\lib\net45\Microsoft.Dynamic.dll">
+      <PackagePath>Microsoft.Dynamic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\dynamiclanguageruntime\1.2.2\lib\net45\Microsoft.Scripting.Metadata.dll">
+      <PackagePath>Microsoft.Scripting.Metadata.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\dynamiclanguageruntime\1.2.2\lib\net45\Microsoft.Scripting.dll">
+      <PackagePath>Microsoft.Scripting.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\inputsimulator\1.0.4\lib\net20\WindowsInput.dll">
+      <PackagePath>WindowsInput.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\ironpython\2.7.9\lib\net45\IronPython.Modules.dll">
+      <PackagePath>IronPython.Modules.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\ironpython\2.7.9\lib\net45\IronPython.SQLite.dll">
+      <PackagePath>IronPython.SQLite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\ironpython\2.7.9\lib\net45\IronPython.Wpf.dll">
+      <PackagePath>IronPython.Wpf.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\ironpython\2.7.9\lib\net45\IronPython.dll">
+      <PackagePath>IronPython.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\system.codedom\4.6.0\lib\netstandard2.0\System.CodeDom.dll">
+      <PackagePath>System.CodeDom.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\Square310x310Logo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\Square310x310Logo.png">
       <PackagePath>Assets\Square310x310Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\Square44x44Logo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\Square44x44Logo.png">
       <PackagePath>Assets\Square44x44Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\Square71x71Logo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\Square71x71Logo.png">
       <PackagePath>Assets\Square71x71Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\LockScreenLogo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\LockScreenLogo.png">
       <PackagePath>Assets\LockScreenLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\Square150x150Logo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\Square150x150Logo.png">
       <PackagePath>Assets\Square150x150Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\Assets\Wide310x150Logo.png">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\Assets\Wide310x150Logo.png">
       <PackagePath>Assets\Wide310x150Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CSApp\CXApp\CXApp\bin\x86\Debug\Core\CXApp.exe">
+    <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x86\Debug\Core\CXApp.exe">
       <PackagePath>CXApp.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

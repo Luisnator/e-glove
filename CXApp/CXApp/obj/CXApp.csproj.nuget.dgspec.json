@@ -41,9 +41,17 @@
               "target": "Package",
               "version": "[1.0.4, )"
             },
+            "IronPython": {
+              "target": "Package",
+              "version": "[2.7.9, )"
+            },
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.9, )"
+            },
+            "System.CodeDom": {
+              "target": "Package",
+              "version": "[4.6.0, )"
             }
           },
           "imports": [

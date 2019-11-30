@@ -1,10 +1,15 @@
 ﻿using System;
 using Windows.Devices.Bluetooth;
 using Windows.Devices.Bluetooth.GenericAttributeProfile;
+
 using Windows.Devices.Enumeration;
 using Windows.Storage.Streams;
 using WindowsInput.Native;
 using WindowsInput;
+using System.Runtime.InteropServices;
+using Windows.UI.Input.Preview.Injection;
+using System.Threading.Tasks;
+using Windows.System;
 
 // This example code shows how you could implement the required main function for a 
 // Console UWP Application. You can replace all the code inside Main with your own custom code.
@@ -131,18 +136,108 @@ namespace CXApp
             // An Indicate or Notify reported that the value has changed.
             var reader = DataReader.FromBuffer(args.CharacteristicValue);
             // Parse the data however required.
-            int value = int.Parse(reader.ReadString(2));
-            Console.WriteLine(value);
+            int value = reader.ReadInt16() >> 8;
+            Console.WriteLine(String.Format("Value read: {0}", value));
             GenerateKeypress(value);
         }
-
-        static void GenerateKeypress(int val)
+ 
+        async static void GenerateKeypress(int val)
         {
-            InputSimulator sim = new InputSimulator();
-
-            if (val == 1)
+            InputInjector inputInjector = InputInjector.TryCreate();
+            var info = new InjectedInputKeyboardInfo();
+            /*foreach (var letter in "hello")
             {
-                sim.Keyboard.KeyPress(VirtualKeyCode.SPACE);
+                var info = new InjectedInputKeyboardInfo();
+                info.VirtualKey = (ushort)((VirtualKey)Enum.Parse(typeof(VirtualKey),
+                                             letter.ToString(), true));
+                inputInjector.InjectKeyboardInput(new[] { info });
+                await Task.Delay(100);
+            }*/
+
+
+            switch (val)
+            {
+                case 1: //Next Page (Presentation)
+                    Console.WriteLine("RIGHT / NEXT PAGE (Presentation)");
+                    info = new InjectedInputKeyboardInfo();
+                    info.VirtualKey = (ushort) VirtualKey.Right;
+                    inputInjector.InjectKeyboardInput(new[] { info });
+                    break;
+                case 2: //Previous Page (Presentation)
+                    Console.WriteLine("LEFT / PREVIOUS PAGE (Presentation)");
+                    info = new InjectedInputKeyboardInfo();
+                    info.VirtualKey = (ushort) VirtualKey.Left;
+                    inputInjector.InjectKeyboardInput(new[] { info });
+                    break;
+                case 3: //Start Presentation (F5)
+                    Console.WriteLine("F5");
+                    info = new InjectedInputKeyboardInfo();
+                    info.VirtualKey = (ushort)VirtualKey.F5;
+                    inputInjector.InjectKeyboardInput(new[] { info });
+                    break;
+                case 4: //End Presentation (Esc)
+                    Console.WriteLine("ESC");
+                    info = new InjectedInputKeyboardInfo();
+                    info.VirtualKey = (ushort)VirtualKey.Escape;
+                    inputInjector.InjectKeyboardInput(new[] { info });
+                    break;
+                case 5: //Next Track
+                    Console.WriteLine("NEXT TRACK");
+                    info = new InjectedInputKeyboardInfo();
+                    info.VirtualKey = (ushort)176;
+                    inputInjector.InjectKeyboardInput(new[] { info });
+                    break;
+                case 6: //Previous Track
+                    Console.WriteLine("PREVIOUS TRACK");
+                    info = new InjectedInputKeyboardInfo();
+                    info.VirtualKey = (ushort)177;
+                    inputInjector.InjectKeyboardInput(new[] { info });
+                    break;
+                case 7: //Play / Pause
+                    Console.WriteLine("PLAY / PAUSE");
+                    info = new InjectedInputKeyboardInfo();
+                    info.VirtualKey = (ushort)179;
+                    inputInjector.InjectKeyboardInput(new[] { info });
+                    break;
+                case 8: //Volume Up
+                    Console.WriteLine("Volume UP");
+                    info = new InjectedInputKeyboardInfo();
+                    info.VirtualKey = (ushort)175;
+                    inputInjector.InjectKeyboardInput(new[] { info });
+                    break;
+                case 9: //Volume Down
+                    Console.WriteLine("Volume DOWN");
+                    info = new InjectedInputKeyboardInfo();
+                    info.VirtualKey = (ushort)174;
+                    inputInjector.InjectKeyboardInput(new[] { info });
+                    break;
+                case 10: //Next Page (Browser)
+                    Console.WriteLine("NEXT PAGE (Browser)");
+                    info = new InjectedInputKeyboardInfo();
+                    info.VirtualKey = (ushort)167;
+                    inputInjector.InjectKeyboardInput(new[] { info });
+                    break;
+                case 11: //Previous Page (Browser)
+                    Console.WriteLine("PREVIOUS PAGE (Browser)");
+                    info = new InjectedInputKeyboardInfo();
+                    info.VirtualKey = (ushort)166;
+                    inputInjector.InjectKeyboardInput(new[] { info });
+                    break;
+                case 12: //Scroll Up
+                    Console.WriteLine("UP");
+                    info = new InjectedInputKeyboardInfo();
+                    info.VirtualKey = (ushort)VirtualKey.Up;
+                    inputInjector.InjectKeyboardInput(new[] { info });
+                    break;
+                case 13: //Scroll Down
+                    Console.WriteLine("DOWN");
+                    info = new InjectedInputKeyboardInfo();
+                    info.VirtualKey = (ushort)VirtualKey.Down;
+                    inputInjector.InjectKeyboardInput(new[] { info });
+                    break;
+                default:
+                    Console.WriteLine("Invalid code read!");
+                    break;
             }
         }
     }
