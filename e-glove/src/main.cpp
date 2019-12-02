@@ -18,17 +18,16 @@ void setup() {
 void loop() {
   if(M5.BtnA.wasPressed()) {
     Serial.println("btnA pressed");
-    sendInt(12);
+    sendInt(7);
   }
   if(M5.BtnB.wasPressed()) {
     Serial.println("btnB pressed");
-    sendInt(13);
+    sendInt(8);
   }
   if(M5.BtnC.wasPressed()) {
     Serial.println("btnC pressed");
-    sendInt(6);
+    sendInt(9);
   }
 
   M5.update();
-  //testfun();
 }

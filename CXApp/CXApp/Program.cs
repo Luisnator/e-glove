@@ -145,15 +145,6 @@ namespace CXApp
         {
             InputInjector inputInjector = InputInjector.TryCreate();
             var info = new InjectedInputKeyboardInfo();
-            /*foreach (var letter in "hello")
-            {
-                var info = new InjectedInputKeyboardInfo();
-                info.VirtualKey = (ushort)((VirtualKey)Enum.Parse(typeof(VirtualKey),
-                                             letter.ToString(), true));
-                inputInjector.InjectKeyboardInput(new[] { info });
-                await Task.Delay(100);
-            }*/
-
 
             switch (val)
             {
