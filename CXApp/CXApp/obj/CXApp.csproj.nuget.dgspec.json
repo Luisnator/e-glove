@@ -37,14 +37,6 @@
       "frameworks": {
         "uap10.0.17763": {
           "dependencies": {
-            "InputSimulator": {
-              "target": "Package",
-              "version": "[1.0.4, )"
-            },
-            "IronPython": {
-              "target": "Package",
-              "version": "[2.7.9, )"
-            },
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.9, )"

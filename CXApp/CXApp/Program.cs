@@ -1,22 +1,10 @@
 ﻿using System;
 using Windows.Devices.Bluetooth;
 using Windows.Devices.Bluetooth.GenericAttributeProfile;
-
 using Windows.Devices.Enumeration;
 using Windows.Storage.Streams;
-using WindowsInput.Native;
-using WindowsInput;
-using System.Runtime.InteropServices;
 using Windows.UI.Input.Preview.Injection;
-using System.Threading.Tasks;
 using Windows.System;
-
-// This example code shows how you could implement the required main function for a 
-// Console UWP Application. You can replace all the code inside Main with your own custom code.
-
-// You should also change the Alias value in the AppExecutionAlias Extension in the 
-// Package.appxmanifest to a value that you define. To edit this file manually, right-click
-// it in Solution Explorer and select View Code, or open it with the XML Editor.
 
 namespace CXApp
 {
@@ -24,13 +12,22 @@ namespace CXApp
     {
         static private String serviceuuid = "4fafc201-1fb5-459e-8fcc-c5c9c331914b";
         static private String characteristicuuid = "beb5483e-36e1-4688-b7f5-ea07361b26a8";
+        static private DeviceWatcher deviceWatcher;
         static void Main(string[] args)
         {
             Console.WriteLine("Starting");
+
+            setup();
+
+            Console.WriteLine("Press a key to continue: ");
+            Console.ReadLine();
+        }
+        private static void setup()
+        {
             // Query for extra properties you want returned
             string[] requestedProperties = { "System.Devices.Aep.DeviceAddress", "System.Devices.Aep.IsConnected" };
 
-            DeviceWatcher deviceWatcher =
+            deviceWatcher =
                         DeviceInformation.CreateWatcher(
                                 BluetoothLEDevice.GetDeviceSelectorFromPairingState(false),
                                 requestedProperties,
@@ -48,9 +45,6 @@ namespace CXApp
 
             // Start the watcher.
             deviceWatcher.Start();
-
-            Console.WriteLine("Press a key to continue: ");
-            Console.ReadLine();
         }
 
         private static void DeviceWatcher_Stopped(DeviceWatcher sender, object args)
@@ -85,7 +79,7 @@ namespace CXApp
             // Note: BluetoothLEDevice.FromIdAsync must be called from a UI thread because it may prompt for consent.
             BluetoothLEDevice bluetoothLeDevice = await BluetoothLEDevice.FromIdAsync(deviceInfo.Id);
 
-            //Console.WriteLine(String.Format("Connected to device:    ID: {0} | Name: {1}", bluetoothLeDevice.DeviceId, bluetoothLeDevice.Name));
+            Console.WriteLine(String.Format("Connected to device:    ID: {0} | Name: {1}", bluetoothLeDevice.DeviceId, bluetoothLeDevice.Name));
             GattDeviceServicesResult result = await bluetoothLeDevice.GetGattServicesAsync();
 
             if (result.Status == GattCommunicationStatus.Success)
@@ -93,7 +87,6 @@ namespace CXApp
                 var services = result.Services;
                 for (int i = 0; i < services.Count; i++)
                 {
-                    //Console.WriteLine(String.Format("Device: {0} | Service: {1}", bluetoothLeDevice.Name, services[i].Uuid));
                     if (services[i].Uuid.Equals(new Guid(serviceuuid)))
                     {
                         SubscribeToServiceAsync(services[i]);
@@ -115,17 +108,26 @@ namespace CXApp
                 {
                     if (characteristics[i].Uuid.Equals(new Guid(characteristicuuid)))
                     {
-                        GattCommunicationStatus status = await characteristics[i].WriteClientCharacteristicConfigurationDescriptorAsync(
-                        GattClientCharacteristicConfigurationDescriptorValue.Notify);
-                        if (status == GattCommunicationStatus.Success)
+                        try
                         {
-                            Console.WriteLine("Server has been informed of clients interest.");
+                            GattCommunicationStatus status = await characteristics[i].WriteClientCharacteristicConfigurationDescriptorAsync(
+                            GattClientCharacteristicConfigurationDescriptorValue.Notify);
+                            if (status == GattCommunicationStatus.Success)
+                            {
+                                Console.WriteLine("Server has been informed of clients interest.");
+                            }
+
+                            characteristics[i].ValueChanged += Characteristic_ValueChanged;
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Error during subscription.");
+                            deviceWatcher.Stop();
+                            setup();
+
                         }
 
-                        characteristics[i].ValueChanged += Characteristic_ValueChanged;
-                        // ... 
 
-                        
                     }
                 }
             }
@@ -135,13 +137,13 @@ namespace CXApp
         {
             // An Indicate or Notify reported that the value has changed.
             var reader = DataReader.FromBuffer(args.CharacteristicValue);
-            // Parse the data however required.
+            // Parse the data
             int value = reader.ReadInt16() >> 8;
             Console.WriteLine(String.Format("Value read: {0}", value));
             GenerateKeypress(value);
         }
  
-        async static void GenerateKeypress(int val)
+        static void GenerateKeypress(int val)
         {
             InputInjector inputInjector = InputInjector.TryCreate();
             var info = new InjectedInputKeyboardInfo();

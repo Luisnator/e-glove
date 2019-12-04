@@ -30,37 +30,17 @@
     <AppXManifest Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-12-02T09:50:07.758</Modified>
+      <Modified>2019-12-04T17:11:13.527</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\CXApp.exe">
       <PackagePath>entrypoint\CXApp.exe</PackagePath>
-      <Modified>2019-12-02T09:50:05.270</Modified>
+      <Modified>2019-12-04T17:11:11.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\CXApp.exe.config">
       <PackagePath>CXApp.exe.config</PackagePath>
-      <Modified>2019-11-30T20:59:41.451</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\inputsimulator\1.0.4\lib\net20\WindowsInput.dll">
-      <PackagePath>WindowsInput.dll</PackagePath>
-      <Modified>2013-12-12T10:46:56.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\ironpython\2.7.9\lib\net45\IronPython.Modules.dll">
-      <PackagePath>IronPython.Modules.dll</PackagePath>
-      <Modified>2018-10-09T17:51:34.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\ironpython\2.7.9\lib\net45\IronPython.SQLite.dll">
-      <PackagePath>IronPython.SQLite.dll</PackagePath>
-      <Modified>2018-10-09T17:51:34.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\ironpython\2.7.9\lib\net45\IronPython.Wpf.dll">
-      <PackagePath>IronPython.Wpf.dll</PackagePath>
-      <Modified>2018-10-09T17:51:34.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Phill\.nuget\packages\ironpython\2.7.9\lib\net45\IronPython.dll">
-      <PackagePath>IronPython.dll</PackagePath>
-      <Modified>2018-10-09T17:51:34.000</Modified>
+      <Modified>2019-12-04T16:41:44.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -123,11 +103,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-11-30T22:43:30.571</Modified>
+      <Modified>2019-12-04T16:55:23.722</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\GitHub\e-glove\CXApp\CXApp\bin\x64\Debug\Core\CXApp.exe">
       <PackagePath>CXApp.exe</PackagePath>
-      <Modified>2019-12-02T09:50:07.706</Modified>
+      <Modified>2019-12-04T17:11:13.512</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

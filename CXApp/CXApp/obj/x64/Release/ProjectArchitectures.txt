@@ -1,0 +1,1 @@
+C:\Projects\GitHub\e-glove\CXApp\CXApp\CXApp.csproj;x64
