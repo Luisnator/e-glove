@@ -1,6 +1,11 @@
 #include <M5Stack.h>
 #include <Arduino.h>
 #include <MPU9250.h>
+#include <BLEDevice.h>
+#include <BLEUtils.h>
+#include <BLEServer.h>
+#include <BLE2902.h>
+#include "bluetooth.h"
 #if CONFIG_FREERTOS_UNICORE
 #define ARDUINO_RUNNING_CORE 0
 #else
@@ -19,27 +24,25 @@ void setup(){
 	 mpu.setup();
   // LCD display
   M5.Lcd.print("Hello World");
+    setupBluetooth();
 }
 
 // The loop routine runs over and over again forever
 void loop() {
-
+  if(M5.BtnA.wasPressed()) {
+    Serial.println("btnA pressed");
+    sendInt(7);
+  }
+  if(M5.BtnB.wasPressed()) {
+    Serial.println("btnB pressed");
+    sendInt(8);
+  }
+  if(M5.BtnC.wasPressed()) {
+    Serial.println("btnC pressed");
+    sendInt(9);
+  }
   M5.update();
-      static uint32_t prev_ms = millis();
-    if ((millis() - prev_ms) > 16)
-    {
-        mpu.update();
-        mpu.print();
-
-        Serial.print("roll  (x-forward (north)) : ");
-        Serial.println(mpu.getRoll());
-        Serial.print("pitch (y-right (east))    : ");
-        Serial.println(mpu.getPitch());
-        Serial.print("yaw   (z-down (down))     : ");
-        Serial.println(mpu.getYaw());
-
-        prev_ms = millis();
-    }
+	
 }
 
 // The arduino task

@@ -218,7 +218,39 @@ main.o: C:/msys32/home/LuisD/esp/M5Stack-IDF/main/main.cpp \
  C:/msys32/home/LuisD/esp/M5Stack-IDF/components/m5stack/src/utility/M5Timer.h \
  C:/msys32/home/LuisD/esp/M5Stack-IDF/components/MPU9250/MPU9250.h \
  C:/msys32/home/LuisD/esp/M5Stack-IDF/components/MPU9250/MPU9250/MPU9250RegisterMap.h \
- C:/msys32/home/LuisD/esp/M5Stack-IDF/components/MPU9250/MPU9250/QuaternionFilter.h
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/MPU9250/MPU9250/QuaternionFilter.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEDevice.h \
+ C:/msys32/home/LuisD/esp/esp-idf/components/bt/bluedroid/api/include/api/esp_gap_ble_api.h \
+ C:/msys32/home/LuisD/esp/esp-idf/components/bt/bluedroid/api/include/api/esp_bt_defs.h \
+ C:/msys32/home/LuisD/esp/esp-idf/components/bt/bluedroid/api/include/api/esp_gattc_api.h \
+ C:/msys32/home/LuisD/esp/esp-idf/components/bt/bluedroid/api/include/api/esp_gatt_defs.h \
+ C:/msys32/home/LuisD/esp/esp-idf/components/bt/include/esp_bt.h \
+ C:/msys32/home/LuisD/esp/esp-idf/components/esp32/include/esp_task.h \
+ C:/msys32/home/LuisD/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEServer.h \
+ C:/msys32/home/LuisD/esp/esp-idf/components/bt/bluedroid/api/include/api/esp_gatts_api.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEUUID.h \
+ C:/msys32/home/LuisD/esp/esp-idf/components/bt/bluedroid/api/include/api/esp_gatt_defs.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEAdvertising.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/FreeRTOS.h \
+ C:/msys32/home/LuisD/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLECharacteristic.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEDescriptor.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEValue.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEService.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLESecurity.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEAddress.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEClient.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLERemoteService.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLERemoteCharacteristic.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLERemoteDescriptor.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEAdvertisedDevice.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEScan.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEUtils.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEUtils.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEServer.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLE2902.h \
+ C:/msys32/home/LuisD/esp/M5Stack-IDF/main/bluetooth.h
 
 C:/msys32/home/LuisD/esp/M5Stack-IDF/components/m5stack/src/M5Stack.h:
 
@@ -659,4 +691,68 @@ C:/msys32/home/LuisD/esp/M5Stack-IDF/components/MPU9250/MPU9250.h:
 C:/msys32/home/LuisD/esp/M5Stack-IDF/components/MPU9250/MPU9250/MPU9250RegisterMap.h:
 
 C:/msys32/home/LuisD/esp/M5Stack-IDF/components/MPU9250/MPU9250/QuaternionFilter.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEDevice.h:
+
+C:/msys32/home/LuisD/esp/esp-idf/components/bt/bluedroid/api/include/api/esp_gap_ble_api.h:
+
+C:/msys32/home/LuisD/esp/esp-idf/components/bt/bluedroid/api/include/api/esp_bt_defs.h:
+
+C:/msys32/home/LuisD/esp/esp-idf/components/bt/bluedroid/api/include/api/esp_gattc_api.h:
+
+C:/msys32/home/LuisD/esp/esp-idf/components/bt/bluedroid/api/include/api/esp_gatt_defs.h:
+
+C:/msys32/home/LuisD/esp/esp-idf/components/bt/include/esp_bt.h:
+
+C:/msys32/home/LuisD/esp/esp-idf/components/esp32/include/esp_task.h:
+
+C:/msys32/home/LuisD/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEServer.h:
+
+C:/msys32/home/LuisD/esp/esp-idf/components/bt/bluedroid/api/include/api/esp_gatts_api.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEUUID.h:
+
+C:/msys32/home/LuisD/esp/esp-idf/components/bt/bluedroid/api/include/api/esp_gatt_defs.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEAdvertising.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/FreeRTOS.h:
+
+C:/msys32/home/LuisD/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLECharacteristic.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEDescriptor.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEValue.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEService.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLESecurity.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEAddress.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEClient.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLERemoteService.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLERemoteCharacteristic.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLERemoteDescriptor.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEAdvertisedDevice.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEScan.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEUtils.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEUtils.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLEServer.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/components/arduino/libraries/BLE/src/BLE2902.h:
+
+C:/msys32/home/LuisD/esp/M5Stack-IDF/main/bluetooth.h:
 /home/LuisD/esp/M5Stack-IDF/main/./main.cpp:
