@@ -20,6 +20,7 @@ const int laserpointer = 19;
 
 MPU9250 mpu;
 ModeSelector ms(indexfinger,middlefinger,ringfinger,pinkyfinger);
+BleHandler bh = BleHandler::getBleHandler();
 void testPrint();
 void testPrint1();
 void testPrint2();
@@ -36,7 +37,7 @@ void setup()
   mpu.setup();
   // LCD display
   M5.Lcd.print("Hello World");
-  setupBluetooth();
+  bh.setupBluetooth();
   ms.registerIndexFinger_CB(testPrint);
   ms.registermiddleFinger_CB(testPrint1);
   ms.registerringFinger_CB(testPrint2);
@@ -51,17 +52,17 @@ void loop()
   if (M5.BtnA.wasPressed())
   {
     //Serial.println("btnA pressed");
-    sendInt(7);
+    bh.sendInt(7);
   }
   if (M5.BtnB.wasPressed())
   {
     Serial.println("btnB pressed");
-    sendInt(8);
+    bh.sendInt(8);
   }
   if (M5.BtnC.wasPressed())
   {
     Serial.println("btnC pressed");
-    sendInt(9);
+    bh.sendInt(9);
   }
   M5.update();
 }
