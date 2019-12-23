@@ -1,7 +1,4 @@
 #include "modeSelector.h"
-void blub(){
-    Serial.println("BLUB");
-}
 ModeSelector::ModeSelector(const int pinIndex, const int pinMiddle, const int pinRing, const int pinPinky){
     pinMode(pinIndex,INPUT);
     pinMode(pinMiddle,INPUT);

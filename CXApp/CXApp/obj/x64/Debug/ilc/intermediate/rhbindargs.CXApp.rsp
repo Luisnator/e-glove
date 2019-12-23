@@ -1,0 +1,15 @@
+﻿/osver:6.2
+/appcontainer
+"/runtime:mrt100_app"
+/eh:clr
+/pdb
+"/nativeLink:C:\Users\LuisD\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.2.7-rel-27913-00\tools\x64\ilc\lib\Native\vmath.lib"
+/customImports
+"C:\msys32\home\LuisD\esp\M5Stack-IDF\CXApp\CXApp\obj\x64\Debug\ilc\intermediate\MDIL\CXApp.mdilexe"
+"/i:C:\msys32\home\LuisD\esp\M5Stack-IDF\CXApp\CXApp\obj\x64\Debug\ilc\intermediate\MDIL"
+"/out:C:\msys32\home\LuisD\esp\M5Stack-IDF\CXApp\CXApp\obj\x64\Debug\ilc\intermediate\Native\CXApp.exe"
+"/pdbAltPath:C:\msys32\home\LuisD\esp\M5Stack-IDF\CXApp\CXApp\bin\x64\Debug\ilc"
+"/res:C:\msys32\home\LuisD\esp\M5Stack-IDF\CXApp\CXApp\obj\x64\Debug\ilc\intermediate\Native.res"
+"/i:C:\Users\LuisD\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.2.7-rel-27913-00\tools\SharedLibrary\chk\MDIL"
+/shimexe
+"/classlib:SharedLibrary"

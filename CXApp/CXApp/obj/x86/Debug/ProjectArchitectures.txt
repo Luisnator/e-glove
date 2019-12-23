@@ -1,1 +1,1 @@
-C:\Projects\GitHub\e-glove\CXApp\CXApp\CXApp.csproj;x86
+C:\msys32\home\LuisD\esp\M5Stack-IDF\CXApp\CXApp\CXApp.csproj;x86

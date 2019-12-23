@@ -1,30 +1,34 @@
 #include "bluetooth.h"
 BleHandler::BleHandler()
 {
-
 }
 void BleHandler::setupBluetooth()
 {
-    M5.Lcd.println("BLE start.");
-    BLEDevice::init("E-Glove");
-    BLEServer *pServer = BLEDevice::createServer();
-    pServer->setCallbacks(this);
-    BLEService *pService = pServer->createService(SERVICE_UUID);
-    pCharacteristic = pService->createCharacteristic(
-        CHARACTERISTIC_UUID,
-        BLECharacteristic::PROPERTY_READ |
-            BLECharacteristic::PROPERTY_WRITE |
-            BLECharacteristic::PROPERTY_NOTIFY |
-            BLECharacteristic::PROPERTY_INDICATE);
-    pCharacteristic->setCallbacks(this);
-    pCharacteristic->addDescriptor(new BLE2902());
+    static int flag = 0;
+    if (!flag)
+    {
+       // M5.Lcd.println("BLE start.");
+        BLEDevice::init("E-Glove");
+        BLEServer *pServer = BLEDevice::createServer();
+        pServer->setCallbacks(this);
+        BLEService *pService = pServer->createService(SERVICE_UUID);
+        pCharacteristic = pService->createCharacteristic(
+            CHARACTERISTIC_UUID,
+            BLECharacteristic::PROPERTY_READ |
+                BLECharacteristic::PROPERTY_WRITE |
+                BLECharacteristic::PROPERTY_NOTIFY |
+                BLECharacteristic::PROPERTY_INDICATE);
+        pCharacteristic->setCallbacks(this);
+        pCharacteristic->addDescriptor(new BLE2902());
 
-    pService->start();
-    BLEAdvertising *pAdvertising = pServer->getAdvertising();
-    pAdvertising->start();
+        pService->start();
+        BLEAdvertising *pAdvertising = pServer->getAdvertising();
+        pAdvertising->start();
+        flag = 1;
+    }
 }
 
-BleHandler& BleHandler::getBleHandler()
+BleHandler &BleHandler::getBleHandler()
 {
     static BleHandler bh;
     return bh;

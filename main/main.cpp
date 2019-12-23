@@ -1,89 +1,66 @@
 #include <M5Stack.h>
 #include <Arduino.h>
-#include <MPU9250.h>
 #include <BLEDevice.h>
 #include <BLEUtils.h>
 #include <BLEServer.h>
 #include <BLE2902.h>
-#include "bluetooth.h"
+#include <MPU9250.h>
 #include "modeSelector.h"
+#include "stateMachine.h"
+#include "bluetooth.h"
 #if CONFIG_FREERTOS_UNICORE
 #define ARDUINO_RUNNING_CORE 0
 #else
 #define ARDUINO_RUNNING_CORE 1
 #endif
+StateMachine sm;
 const int indexfinger = 2;
 const int middlefinger = 5;
 const int ringfinger = 17;
 const int pinkyfinger = 16;
-const int laserpointer = 19;
-
-MPU9250 mpu;
 ModeSelector ms(indexfinger,middlefinger,ringfinger,pinkyfinger);
-BleHandler bh = BleHandler::getBleHandler();
-void testPrint();
-void testPrint1();
-void testPrint2();
-void testPrint3();
+void index();
+void middle();
+void ring();
+void pinky();
 // The setup routine runs once when M5Stack starts up
 void setup()
 {
-
   //
   Serial.begin(115200);
+  BleHandler::getBleHandler().setupBluetooth();
+  sm.init();
   // Initialize the M5Stack object
-  M5.begin();
-  Wire.begin();
-  mpu.setup();
-  // LCD display
-  M5.Lcd.print("Hello World");
-  bh.setupBluetooth();
-  ms.registerIndexFinger_CB(testPrint);
-  ms.registermiddleFinger_CB(testPrint1);
-  ms.registerringFinger_CB(testPrint2);
-  ms.registerpinkyfinger_CB(testPrint3);
-  pinMode(laserpointer,OUTPUT);
-  digitalWrite(laserpointer,LOW);
+  //M5.begin();
+  //M5.Lcd.print("E-Glove!");
+  //m5.Speaker.mute();
+  ms.registerIndexFinger_CB(index);
+  ms.registermiddleFinger_CB(middle);
+  ms.registerringFinger_CB(ring);
+  ms.registerpinkyfinger_CB(pinky);
 }
 
 // The loop routine runs over and over again forever
 void loop()
 {
-  if (M5.BtnA.wasPressed())
-  {
-    //Serial.println("btnA pressed");
-    bh.sendInt(7);
-  }
-  if (M5.BtnB.wasPressed())
-  {
-    Serial.println("btnB pressed");
-    bh.sendInt(8);
-  }
-  if (M5.BtnC.wasPressed())
-  {
-    Serial.println("btnC pressed");
-    bh.sendInt(9);
-  }
-  M5.update();
+  sm.work();
 }
 
-void testPrint()
+void index()
 {
-  Serial.println("ICH WURDE AUSGELÖST!!");
-  digitalWrite(laserpointer,HIGH);
+  sm.changeState(laserpointer);
 }
-void testPrint1()
+void middle()
 {
-  Serial.println("ICH WURDE AUSGELÖST1111!!");
-  digitalWrite(laserpointer,LOW);
+  sm.changeState(browser);
 }
-void testPrint2()
+void ring()
 {
-  Serial.println("ICH WURDE AUSGELÖST2222!!");
+  sm.changeState(multimedia);
 }
-void testPrint3()
+void pinky()
 {
-  Serial.println("ICH WURDE AUSGELÖST3333!!");
+  sm.changeState(presentation);
 }
 
 // The arduino task
