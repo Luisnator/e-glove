@@ -5,6 +5,7 @@
 #include "gestureRecognition.h"
 #include "bluetooth.h"
 #include "flexSensor.h"
+#include "DisplayHandler.h"
 enum{laserpointer,browser,multimedia,presentation};
 enum{nextpage=1,previouspage,startpresentation,endpresentation,nexttrack,previoustrack,playpause,volumeup,volumedown,browsernextpage,browserpreviouspage,scrollup,scrolldown};
 class StateMachine
@@ -17,6 +18,7 @@ class StateMachine
     int state = 0;
     GestureRecognition &gr = GestureRecognition::getGestureRecognition();
     BleHandler &bh = BleHandler::getBleHandler();
+    DisplayHandler &dh = DisplayHandler::getDisplayHandler();
     FlexSensor fs = FlexSensor(36,3000);
 
     public:

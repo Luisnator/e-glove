@@ -28,10 +28,11 @@ void setup()
 {
   //
   Serial.begin(115200);
+  M5.begin();
   sm.init();
   // Initialize the M5Stack object
-  M5.begin();
-  M5.Lcd.print("E-Glove!");
+ 
+  //M5.Lcd.print("E-Glove!");
   ms.registerIndexFinger_CB(index);
   ms.registermiddleFinger_CB(middle);
   ms.registerringFinger_CB(ring);

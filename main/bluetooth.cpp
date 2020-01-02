@@ -7,7 +7,6 @@ void BleHandler::setupBluetooth()
     static int flag = 0;
     if (!flag)
     {
-       // M5.Lcd.println("BLE start.");
         BLEDevice::init("E-Glove");
         BLEServer *pServer = BLEDevice::createServer();
         pServer->setCallbacks(this);
@@ -39,31 +38,29 @@ void BleHandler::sendInt(int val)
 {
     if (deviceConnected)
     {
-        M5.Lcd.println(val);
         pCharacteristic->setValue(val);
         pCharacteristic->notify();
     }
 }
 void BleHandler::onConnect(BLEServer *pServer)
 {
-    M5.Lcd.println("connect");
+    //connect
     deviceConnected = true;
 }
 
 void BleHandler::onDisconnect(BLEServer *pServer)
 {
-    M5.Lcd.println("disconnect");
+    //disconnect
     deviceConnected = false;
 }
 void BleHandler::onRead(BLECharacteristic *pCharacteristic)
 {
-    M5.Lcd.println("read");
+    //read
     pCharacteristic->setValue("Hello World!");
 }
 
 void BleHandler::onWrite(BLECharacteristic *pCharacteristic)
 {
-    M5.Lcd.println("write");
+    //write
     std::string value = pCharacteristic->getValue();
-    M5.Lcd.println(value.c_str());
 }
