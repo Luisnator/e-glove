@@ -13,7 +13,7 @@ class StateMachine
     unsigned long previousMillis = 0;
     const long interval = 500;
     int w_interval = 0;
-    const int laserpointer_pin = 19; 
+    const int laserpointer_pin = 26; 
     int state = 0;
     GestureRecognition &gr = GestureRecognition::getGestureRecognition();
     BleHandler &bh = BleHandler::getBleHandler();

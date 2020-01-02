@@ -28,12 +28,10 @@ void setup()
 {
   //
   Serial.begin(115200);
-  BleHandler::getBleHandler().setupBluetooth();
   sm.init();
   // Initialize the M5Stack object
-  //M5.begin();
-  //M5.Lcd.print("E-Glove!");
-  //m5.Speaker.mute();
+  M5.begin();
+  M5.Lcd.print("E-Glove!");
   ms.registerIndexFinger_CB(index);
   ms.registermiddleFinger_CB(middle);
   ms.registerringFinger_CB(ring);

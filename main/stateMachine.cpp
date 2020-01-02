@@ -1,12 +1,12 @@
 #include "stateMachine.h"
 StateMachine::StateMachine()
 {
-    //bh.setupBluetooth();
     pinMode(laserpointer_pin,OUTPUT);
 }
 void StateMachine::init()
 {
     gr.init();
+    bh.setupBluetooth();
 }
 void StateMachine::changeState(int state)
 {
@@ -20,7 +20,6 @@ void StateMachine::work()
         gr.updateMPU();
         prev_ms = millis();
     }
-    //Serial.println(state);
     if(!fs.isFlexed())
     {
         digitalWrite(laserpointer_pin,LOW); 
