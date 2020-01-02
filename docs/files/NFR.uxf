@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>110</x>
+      <y>40</y>
+      <w>980</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes>*req*
+non-functional requirements
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>90</y>
+      <w>280</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Akkubetrieb*
+--
+ID = "NFR1"
+Text = "Das System muss portabel sein 
+und im Akkubetrieb funktionieren."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>310</y>
+      <w>280</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Akkuleistung/Verbrauch*
+--
+ID = "NFR2"
+Text = "Das System muss in der Lage sein, 
+mindestens 30 Minuten im Dauerbetrieb zu 
+funktionieren."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>90</y>
+      <w>280</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Reaktionszeit*
+--
+ID = "NFR3"
+Text = "Das System muss eine Worst-Case 
+Zeit zwischen der Eingabe einer Geste 
+und der Reaktion an dem Zielrechner von 
+einer Sekunde oder weniger haben."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>250</x>
+      <y>210</y>
+      <w>110</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>780</x>
+      <y>90</y>
+      <w>280</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Reichweite*
+--
+ID = "NFR4"
+Text = "Der Handschuh muss bei einer 
+Entfernung von bis zu 5m zu dem 
+Zielrechner funktionsfähig sein."</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
