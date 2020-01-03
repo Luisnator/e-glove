@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>105</x>
+      <y>14</y>
+      <w>1015</w>
+      <h>2107</h>
+    </coordinates>
+    <panel_attributes>*req*
+functional requirements
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>112</x>
+      <y>49</y>
+      <w>196</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Wechseln von Funktionen*
+--
+ID = "FR1"
+Text = "Es muss möglich sein, zwei Finger 
+zu berühren, um zu entsprechend 
+unterschiedlichen Funktionen des 
+Handschuhs zu wechseln."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>567</x>
+      <y>84</y>
+      <w>105</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>133</x>
+      <y>497</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Präsentationssteuerung*
+--
+ID = "FR1.1"
+Text = "Werden Zeigefinger und Daumen 
+berührt, so muss in den Zustand für die 
+Erkennung und Übertragung von Gesten 
+für die Präsentationskontrolle gewechselt 
+werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>112</x>
+      <y>140</y>
+      <w>21</w>
+      <h>1932</h>
+    </coordinates>
+    <panel_attributes>lt=(+)-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;2740.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>378</x>
+      <y>49</y>
+      <w>196</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Verbindung per Bluetooth*
+--
+ID = "FR2"
+Text = "Es muss möglich sein den 
+Handschuh mittels Bluetooth mit einem 
+Rechner zu verbinden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>658</x>
+      <y>42</y>
+      <w>196</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Senden von Tastatursignalen*
+--
+ID = "FR3"
+Text = "Wird über den Handschuh mit dem 
+Zielrechner interagiert, so muss dies über 
+klassische Tastatursignale geschehen."
+-.
+&lt;&lt;derived&gt;&gt;
+&lt;&lt;requirement&gt;&gt;Folie weiter
+&lt;&lt;requirement&gt;&gt;Folie zurück
+&lt;&lt;requirement&gt;&gt;Präsentation starten
+&lt;&lt;requirement&gt;&gt;Präsentation beenden
+&lt;&lt;requirement&gt;&gt;Nächster Abschnitt
+&lt;&lt;requirement&gt;&gt;Vorheriger Abschnitt
+&lt;&lt;requirement&gt;&gt;Play
+&lt;&lt;requirement&gt;&gt;Pause
+&lt;&lt;requirement&gt;&gt;Lautstärke hoch
+&lt;&lt;requirement&gt;&gt;Lautstärke runter
+&lt;&lt;requirement&gt;&gt;Seite vor
+&lt;&lt;requirement&gt;&gt;Seite zurück
+&lt;&lt;requirement&gt;&gt;Scrollen hoch
+&lt;&lt;requirement&gt;&gt;Scrollen runter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>49</y>
+      <w>196</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Gestenerkennung*
+--
+ID = "FR4"
+Text = "Das System muss einfache Gesten 
+erkennen können."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>910</y>
+      <w>175</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Wischen links*
+--
+ID = "FR4.1"
+Text = "Das System muss ein Wischen 
+nach Links erkennen können."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>1001</y>
+      <w>175</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Wischen rechts*
+--
+ID = "FR4.2"
+Text = "Das System muss ein Wischen 
+nach Rechts erkennen können."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>1274</y>
+      <w>175</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Rotation im Uhrzeigersinn*
+--
+ID = "FR4.5"
+Text = "Das System muss eine 
+Rotation im Uhrzeigersinn erkennen 
+können."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>1372</y>
+      <w>175</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Rotation gegen den Uhrzeigersinn*
+--
+ID = "FR4.6"
+Text = "Das System muss eine 
+Rotation gegen den Uhrzeigersinn 
+erkennen können."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>1183</y>
+      <w>175</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Wischen runter*
+--
+ID = "FR4.4"
+Text = "Das System muss ein Wischen 
+runter erkennen können."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>1092</y>
+      <w>175</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Wischen hoch*
+--
+ID = "FR4.3"
+Text = "Das System muss ein Wischen 
+hoch erkennen können."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1092</x>
+      <y>140</y>
+      <w>21</w>
+      <h>1281</h>
+    </coordinates>
+    <panel_attributes>lt=(+)-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1810.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1078</x>
+      <y>938</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>133</x>
+      <y>1127</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Multimediasteuerung*
+--
+ID = "FR1.2"
+Text = "Werden Mittelfinger und Daumen 
+berührt, so muss in den Zustand für die 
+Erkennung und Übertragung von Gesten 
+für die Multimediakontrolle gewechselt 
+werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>133</x>
+      <y>2009</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Laserpointer*
+--
+ID = "FR1.4"
+Text = "Werden kleiner Finger und Daumen 
+berührt, so muss der eingebaute 
+Laserpointer aktiviert werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>112</x>
+      <y>539</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>112</x>
+      <y>1169</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>112</x>
+      <y>2051</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1078</x>
+      <y>1029</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1078</x>
+      <y>1120</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1078</x>
+      <y>1211</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1078</x>
+      <y>1400</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1078</x>
+      <y>1302</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>322</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Folie weiter*
+--
+ID = "FR1141"
+Text = "Ist das System im Zustand für die 
+Präsentationskontrolle und wird ein 
+Wischen nach Links erkannt, so soll ein
+Tastatursignal entsprechend 
+[Pfeiltaste Rechts] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>441</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Folie zurück*
+--
+ID = "FR1142"
+Text = "Ist das System im Zustand für die 
+Präsentationskontrolle und wird ein 
+Wischen nach Rechts erkannt, so soll ein
+Tastatursignal entsprechend 
+[Pfeiltaste Links] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>560</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Präsentation starten*
+--
+ID = "FR1143"
+Text = "Ist das System im Zustand für die 
+Präsentationskontrolle und wird ein 
+Wischen hoch erkannt, so soll ein
+Tastatursignal entsprechend 
+[F5] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>679</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Präsentation beenden*
+--
+ID = "FR1144"
+Text = "Ist das System im Zustand für die 
+Präsentationskontrolle und wird ein 
+Wischen hoch erkannt, so soll ein
+Tastatursignal entsprechend 
+[ESC] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>364</y>
+      <w>133</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;190.0;10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>504</y>
+      <w>133</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>560</y>
+      <w>133</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>588</y>
+      <w>133</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0;170.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>917</y>
+      <w>294</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>1036</y>
+      <w>294</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>1127</y>
+      <w>294</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>1218</y>
+      <w>294</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>833</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Nächster Abschnitt*
+--
+ID = "FR1241"
+Text = "Ist das System im Zustand für die 
+Multimediakontrolle und wird ein 
+Wischen nach Links erkannt, so soll ein
+Tastatursignal entsprechend 
+[Scan Next Track] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>952</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Vorheriger Abschnitt*
+--
+ID = "FR1242"
+Text = "Ist das System im Zustand für die 
+Multimediakontrolle und wird ein 
+Wischen nach Rechts erkannt, so soll ein
+Tastatursignal entsprechend 
+[Scan Previous Track] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>1071</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Play*
+--
+ID = "FR1243"
+Text = "Ist das System im Zustand für die 
+Multimediakontrolle und wird ein 
+Wischen hoch erkannt, so soll ein
+Tastatursignal entsprechend 
+[Play] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>1190</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Pause*
+--
+ID = "FR1244"
+Text = "Ist das System im Zustand für die 
+Multimediakontrolle und wird ein 
+Wischen runter erkannt, so soll ein
+Tastatursignal entsprechend 
+[Pause] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>1309</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Lautstärke hoch*
+--
+ID = "FR1245"
+Text = "Ist das System im Zustand für die 
+Multimediakontrolle und wird eine 
+Rotation im Uhrzeigersinn erkannt, so soll 
+ein Tastatursignal entsprechend 
+[Volume Increment] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>1428</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Lautstärke runter*
+--
+ID = "FR1246"
+Text = "Ist das System im Zustand für die 
+Multimediakontrolle und wird eine 
+Rotation gegen den Uhrzeigersinn erkannt, 
+so soll ein Tastatursignal entsprechend 
+[Volume Decrement] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>875</y>
+      <w>133</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;360.0;10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>994</y>
+      <w>133</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;200.0;90.0;200.0;90.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>1141</y>
+      <w>133</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>1183</y>
+      <w>133</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>1211</y>
+      <w>133</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0;90.0;210.0;170.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>1218</y>
+      <w>133</w>
+      <h>287</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;380.0;170.0;380.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>1309</y>
+      <w>294</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>1428</y>
+      <w>294</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>392</y>
+      <w>294</w>
+      <h>532</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;740.0;350.0;740.0;350.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>511</y>
+      <w>294</w>
+      <h>532</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;740.0;300.0;740.0;300.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>630</y>
+      <w>294</w>
+      <h>504</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;700.0;250.0;700.0;250.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>749</y>
+      <w>294</w>
+      <h>476</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;660.0;200.0;660.0;200.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>133</x>
+      <y>1750</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Browsersteuerung*
+--
+ID = "FR1.3"
+Text = "Werden Ringfinger und Daumen 
+berührt, so muss in den Zustand für die 
+Erkennung und Übertragung von Gesten 
+für die Browserkontrolle gewechselt 
+werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>112</x>
+      <y>1792</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>1575</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Seite vor*
+--
+ID = "FR1341"
+Text = "Ist das System im Zustand für die 
+Browserkontrolle und wird ein 
+Wischen Links erkannt, so soll ein 
+Tastatursignal entsprechend 
+[Alt] + [Pfeiltaste Rechts] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>1694</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Seite zurück*
+--
+ID = "FR1342"
+Text = "Ist das System im Zustand für die 
+Browserkontrolle und wird ein 
+Wischen Rechts erkannt, so soll ein 
+Tastatursignal entsprechend 
+[Alt] + [Pfeiltaste Links] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>1932</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Scrollen runter*
+--
+ID = "FR1344"
+Text = "Ist das System im Zustand für die 
+Browserkontrolle und wird ein 
+Wischen runter erkannt, so soll ein 
+Tastatursignal entsprechend 
+[Pfeiltaste unten] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>1813</y>
+      <w>196</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Scrollen hoch*
+--
+ID = "FR1343"
+Text = "Ist das System im Zustand für die 
+Browserkontrolle und wird ein 
+Wischen hoch erkannt, so soll ein 
+Tastatursignal entsprechend 
+[Pfeiltaste oben] gesendet werden."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>182</x>
+      <y>189</y>
+      <w>196</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;requirement&gt;&gt;
+*Lesen von Gesten*
+--
+ID = "FR5"
+Text = "Wird der Ringfinger (an dem sich 
+der Flexsensor befindet) geschlossen, so 
+muss das System beginnen Gesten zu 
+lesen."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>231</x>
+      <y>133</y>
+      <w>77</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>1617</y>
+      <w>133</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;190.0;10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>1757</y>
+      <w>133</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>1813</y>
+      <w>133</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>1841</y>
+      <w>133</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0;170.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>931</y>
+      <w>294</w>
+      <h>672</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;10.0;230.0;10.0;230.0;930.0;10.0;930.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>1050</y>
+      <w>294</w>
+      <h>672</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;10.0;280.0;10.0;280.0;930.0;10.0;930.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>1141</y>
+      <w>294</w>
+      <h>700</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;10.0;330.0;10.0;330.0;970.0;10.0;970.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>1232</y>
+      <w>294</w>
+      <h>728</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
+    <additional_attributes>400.0;10.0;380.0;10.0;380.0;1010.0;10.0;1010.0</additional_attributes>
+  </element>
+</diagram>
