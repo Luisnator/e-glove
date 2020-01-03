@@ -8,6 +8,7 @@ class GestureRecognition
 {
     private:
     MPU9250 mpu;
+    const int confirmtime = 300;
 
     public:
     GestureRecognition();

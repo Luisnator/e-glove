@@ -29,7 +29,7 @@ void DisplayHandler::setDisplayState(const int state)
     {
         M5.Lcd.fillScreen(GREEN);
         M5.Lcd.setCursor(coords[0],coords[1]);
-        M5.Lcd.setTextColor(WHITE);
+        M5.Lcd.setTextColor(BLACK);
         M5.Lcd.setTextSize(text_size);
         M5.Lcd.print("Browser");
         break;
@@ -47,7 +47,7 @@ void DisplayHandler::setDisplayState(const int state)
     {
         M5.Lcd.fillScreen(YELLOW);
         M5.Lcd.setCursor(coords[0],coords[1]);
-        M5.Lcd.setTextColor(WHITE);
+        M5.Lcd.setTextColor(BLACK);
         M5.Lcd.setTextSize(text_size);
         M5.Lcd.print("Presentation");
         break;
