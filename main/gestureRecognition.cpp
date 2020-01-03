@@ -17,22 +17,61 @@ void GestureRecognition::init()
 }
 int GestureRecognition::getGesture()
 {
-    mpu.print();
     if (mpu.getGyro(0) < -100)
     {
-        return UpSwipe;
+        int time = millis();
+        while(millis()-time < confirmtime)
+        {}
+        if(mpu.getGyro(0) < -100)
+        {
+            return UpSwipe;
+        }
+        else
+        {
+            return getGesture();
+        }
     }
     else if (mpu.getGyro(0) > 100)
     {
-        return DownSwipe;
+        int time = millis();
+        while(millis()-time < confirmtime)
+        {}
+        if(mpu.getGyro(0) > 100)
+        {
+            return DownSwipe;
+        }
+        else
+        {
+            return getGesture();
+        }
     }
     else if (mpu.getGyro(2) < -100)
     {
-        return LeftSwipe;
+        int time = millis();
+        while(millis()-time < confirmtime)
+        {}
+        if(mpu.getGyro(2) < -100)
+        {
+            return LeftSwipe;
+        }
+        else
+        {
+            return getGesture();
+        }
     }
     else if (mpu.getGyro(2) > 100)
     {
-        return RightSwipe;
+        int time = millis();
+        while(millis()-time < confirmtime)
+        {}
+        if(mpu.getGyro(2) > 100)
+        {
+            return RightSwipe;
+        }
+        else
+        {
+            return getGesture();
+        }
     }
     else if (mpu.getPitch() > 60)
     {

@@ -1,7 +1,7 @@
 #include "stateMachine.h"
 StateMachine::StateMachine()
 {
-    pinMode(laserpointer_pin,OUTPUT);
+    pinMode(laserpointer_pin, OUTPUT);
 }
 void StateMachine::init()
 {
@@ -23,9 +23,9 @@ void StateMachine::work()
         gr.updateMPU();
         prev_ms = millis();
     }
-    if(!fs.isFlexed())
+    if (!fs.isFlexed())
     {
-        digitalWrite(laserpointer_pin,LOW); 
+        digitalWrite(laserpointer_pin, LOW);
     }
     unsigned long currentMillis = millis();
     if (currentMillis - previousMillis >= w_interval && fs.isFlexed())
@@ -59,13 +59,21 @@ void StateMachine::work()
             }
             case UpSwipe:
             {
-                bh.sendInt(scrollup);
+                //repeat 12 times
+                for (int i = 0; i < 12; i++)
+                {
+                    bh.sendInt(scrollup);
+                }
                 previousMillis = currentMillis;
                 break;
             }
             case DownSwipe:
             {
-                bh.sendInt(scrolldown);
+                //repeat 12 times
+                for (int i = 0; i < 12; i++)
+                {
+                    bh.sendInt(scrolldown);
+                }
                 previousMillis = currentMillis;
                 break;
             }
