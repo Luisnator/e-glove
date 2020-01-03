@@ -1,8 +1,8 @@
 # E-Glove
 ## Entwurfsspezifikation
 ### Autoren
-- Luis Deutsch
-- Phillip Penner
+Luis Deutsch
+Phillip Penner
 
 ### Inhaltsverzeichnis
 
@@ -87,6 +87,11 @@ Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner e
 
 ## 3.5 Entwurf
     - Detaillierte UML-Diagramme für relevante Softwarebausteine
+### 3.5.1 Klassendiagramm (vereinfacht)
+![Klassendiagramm_reduziert](images/Klassendiagramm_reduziert.png "Klassendiagramm_reduziert")
+
+### 3.5.2 Klassendiagramm (vollständig)
+![Klassendiagramm_komplett](images/Klassendiagramm_komplett.png "Klassendiagramm_komplett")
 
 # 4 Projektorganisation
 
@@ -101,7 +106,19 @@ Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner e
     - Rollendefinition und Zuordnung
 
 ## 4.3 Grober Projektplan
-    - Meilensteine
+
+### Meilenstein 1 (Bis: 18.11.2019)
+Handschuh bauen und in die Komponenten einarbeiten.
+
+### Meilenstein 2 (Bis: 02.12.2019)
+Kabellose Verbindung zum Zielrechner herstellen und Signale übertragen.
+
+### Meilenstein 3 (Bis: 30.12.2019)
+Registrierung von Gesten.
+
+### Meilenstein 4 (Bis: 13.01.2020)
+Zusammenführung der Funktionen.
+
 
 # 5 Anhänge
 

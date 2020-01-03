@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>40</y>
+      <w>330</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Main
+--
+-sm: StateMachine
+-ms: ModeSelector
+--
+-loop(): void
+-index(): void
+-middle(): void
+-ring(): void
+-pinky(): void
+-loopTask(pvParameters: void*): void
+
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>910</y>
+      <w>390</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>DisplayHandler
+--
+-text_size: int
+-coords: int[ ]
+--
+-&lt;&lt;Create&gt;&gt; DisplayHandler(): DisplayHandler
+_+getDisplayHandler(): DisplayHandler&amp;_
++init(): void
++setDisplayState(state: int): void
+
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>390</y>
+      <w>450</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>BleHandler
+--
+-pserver: BLEServer*
+-pCharacteristic: BLEpCharacteristic*
+-deviceConnected: bool
+--
+-&lt;&lt;Create&gt;&gt; BleHandler(): BleHandler
++setupBluetooth(): void
++sendInt(val: int): void
++onConnect(pserver: BLEServer*): void
++onDisconnect(pserver: BLEServer*): void
++onRead(pCharacteristic: BLEpCharacteristic*): void
++onWrite(pCharacteristic: BLEpCharacteristic*): void
+_+getBleHandler(): BleHandler&amp;_
+
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1170</x>
+      <y>540</y>
+      <w>480</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>FlexSensor
+--
+-pin: int
+-accuracy: int
+--
++&lt;&lt;Create&gt;&gt; FlexSensor(pin: int, accuracy: int): FlexSensor
++setAccuracy(accuracy: int): void
++isFlexed(): bool
+
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>910</y>
+      <w>460</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>GestureRecognition
+--
+-mpu: MPU9250
+-CONFIRMTIME: int
+--
++&lt;&lt;Create&gt;&gt; GestureRecognition(): GestureRecognition
+_+getGestureRecognition(): GestureRecognition&amp;_
++getGesture(): int
++updateMPU(): void
++init(): void
+
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1170</x>
+      <y>40</y>
+      <w>540</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>ModeSelector
+--
+-indexfinger: callback_function
+-middlefinger: callback_function
+-ringfinger: callback_function
+-pinkyfinger: callback_function
+-pinIndex: int
+-pinMiddle: int
+-pinRing: int
+-pinPinky: int
+--
++&lt;&lt;Create&gt;&gt; ModeSelector(pinIndex: int, pinMiddle: int, pinRing: int,
+                                         pinPinky: int): modeSelector
++registerIndexFinger_CB(f: callback_function): void
++registermiddleFinger_CB(f: callback_function): void
++registerringFinger_CB(f: callback_function): void
++registerpinkyfinger_CB(f: callback_function): void
+
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>390</y>
+      <w>330</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>StateMachine
+--
+-previousMillis: unsigned long
+-INTERVAL: long
+-w_interval: int
+-LASERPOINTER_PIN: int
+-state: int
+-gr: GestureRecognition&amp;
+-bh: BleHandler&amp;
+-dh: DisplayHandler&amp;
+-fs: FlexSensor
+--
++changeState(state: int): void
++work(): void
++init(): void
+
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>140</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>880</x>
+      <y>240</y>
+      <w>30</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>510</x>
+      <y>520</y>
+      <w>240</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>10.0;10.0;220.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>670</y>
+      <w>30</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>10.0;240.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>610</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>980</x>
+      <y>670</y>
+      <w>30</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>10.0;240.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1780</x>
+      <y>100</y>
+      <w>310</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>
+
+&lt;&lt;typedef&gt;&gt;
+callback_function
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1890</x>
+      <y>100</y>
+      <w>290</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>void (*callback_function)(void)
+style=wordwrap
+fontsize=14</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1700</x>
+      <y>140</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
