@@ -69,6 +69,8 @@ Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner e
     - Systemarchitekturdiagramm ("Box-And-Arrow" Diagramm)
     - Schnittstellenbeschreibung
     - Kommunikationsprotokolle, Datenformate
+### 3.1.1 Strukturdiagramm
+![Strukturdiagramm](images/Strukturdiagramm.png "Strukturdiagramm")
 
 ## 3.2 Softwarearchitektur
     - Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
