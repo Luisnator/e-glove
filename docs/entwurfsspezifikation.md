@@ -72,6 +72,9 @@ Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner e
 ### 3.1.1 Strukturdiagramm
 ![Strukturdiagramm](images/Strukturdiagramm.png "Strukturdiagramm")
 
+### 3.1.2 Blockdefinitionsdiagramm: Physischer Aufbau
+![Blockdefinitionsdiagramm_physisch](images/Blockdefinitionsdiagramm_physisch.png "Blockdefinitionsdiagramm_physisch")
+
 ## 3.2 Softwarearchitektur
     - Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
 
