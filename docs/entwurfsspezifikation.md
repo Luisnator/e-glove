@@ -20,19 +20,65 @@ Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner e
 # 2 Anforderungen
 
 ## 2.1 Funktionale Anforderungen
-### 2.1.1 Anforderungsdiagramm
+### 2.1.1 Use Case Diagramm
+![UseCaseDiagramm_komplett](images/UseCaseDiagramm_komplett.png "UseCaseDiagramm_komplett")
+
+### 2.1.2 Anforderungsdiagramm
 ![Funktionale Anforderungen](images/FR.png "Funktionale Anforderungen")
 
-## 2.2 Nicht-funktionale Anforderungen 
+## 2.2 Nicht-funktionale Anforderungen
 
 ### 2.2.1 Anforderungsdiagramm
 ![Nicht-funktionale Anforderungen](images/NFR.png "Nicht-funktionale Anforderungen")
 
 ### 2.2.2 Rahmenbedingungen
     - Normen, Standards, Protokolle, Hardware, externe Vorgaben
+#### Verwendete Hardware
+**M5Stack Core (+ Starter Kit)**
+https://m5stack.com/collections/m5-core/products/m5go-iot-starter-kit-stem-education
+
+- Betrieben durch einen ESP32.
+- Bietet viele bereits eingebaute Features an (z.B. LCD-Farbdisplay, 3 Tasten, Lautsprecher, ...).
+- Für uns hauptsächlich relevant:
+	- Bluetooth-Funktionalität (BLE).
+		- Für die kabellose Kommunikation mit dem Zielrechner, der gesteuert werden soll.
+	- 9-Achsen-Sensor
+		- Das enthaltene Gyroskop, sowie der Beschleunigungssensor werden genutzt, um die Gesten zu erkennen.
+
+**Flexsensor**
+https://www.antratek.de/flex-sensor-2-2?gclid=EAIaIQobChMIppH7n8m35QIVmMx3Ch376AAcEAQYAyABEgJ9efD_BwE
+
+- An dem Ringfinger-Rücken besfestigt.
+- Hat eine Länge von ca. 5,5 cm.
+- Hat bei geradem Zustand einen geringen Widerstand und bei zunehmender Biegung erhöht sich auch der Widerstand.
+- Wenn der Sensor (und damit der Ringfinger) gebogen ist, heißt dies, dass der Benutzer eine Geste zur Steuerung des Zielrechners ausführen will.
+
+**Punkt Lasermodul**
+https://www.reichelt.de/punkt-lasermodul-rot-650-nm-03-6-vdc-9x20-mm-klasse-1-pico-70132441-p254487.html
+
+- Mittels einer 3D-gedruckten Halterung am Zeigefinger befestigt
+- Erweiternd zu den Präsentationsfunktionen des E-Glove als Zeigewerkzeug genutzt.
+
+**Bluetooth USB 2.0 Adapter**
+https://www.reichelt.de/micro-bluetooth-usb-2-0-adapter-v4-0-edr-logilink-bt0015a-p170030.html?&trstct=pol_0
+
+- Adapter, der dem angeschlossenen Rechner Bluetooth-Funktonalitäten verleiht.
+- Für die Nutzung mit Rechnern, die keine eingebaute Bluetooth-Funktonalität besitzen.
+
+**Kapazitiver Berührungssensor x4**
+https://www.reichelt.de/entwicklerboards-kapazitiver-beruehrungssensor-debo-touch-p253985.html
+
+- Befestigt an allen Fingerspitzen, außer dem Daumen.
+- Dienen zur Auswahl der verschiedenen Modi des Handschuhs ("Menüführung").
+- Der Daumen ist bei dem E-Glove frei, mit diesem weden die Sensoren betätigt.
 
 ### 2.2.3 Betriebsbedingungen
     - Vorgaben des Kunden (z.B. Web Browser / Betriebssystem Versionen, Programmiersprache)
+#### Fremde Vorgaben
+1. Als Kernelement soll der **M5Stack Core** (https://m5stack.com/) genutzt werden.
+2. Als Framework für die Software-Entwicklung auf dem M5Stack, soll das **ESP-IDF** (https://github.com/espressif/esp-idf) genutzt werden.
+	2.1. Es sollen die Funktionalitäten von **FreeRTOS** (https://www.freertos.org/) genutzt werden, um Tasks zu erstellen und zu verwalten.
+3. Als Programmiersprache (auf dem M5Stack) soll **C / C++** genutzt werden.
 
 ### 2.2.4 Qualitätsmerkmale
     - Externe Qualitätsanforderungen (z.B. Performance, Sicherheit, Zuverlässigkeit, Benutzerfreundlichkeit)
@@ -74,6 +120,34 @@ Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner e
 
 ### 3.1.2 Blockdefinitionsdiagramm: Physischer Aufbau
 ![Blockdefinitionsdiagramm_physisch](images/Blockdefinitionsdiagramm_physisch.png "Blockdefinitionsdiagramm_physisch")
+
+### 3.1.3 Kommunikationsprotokoll
+Der E-Glove und der Zielrechner kommunizieren über Bluetooth, wobei der E-Glove als Server fungiert und der Zielrechner als Client.
+Für den kompletten Ablauf der Kopplung zwischen Server und Client siehe 3.4, vereinfacht kann aber gesagt werden:
+1. Der Server (E-Glove) bietet einen Service mit einer Charakteristik an.
+2. Der Client (Zielrechner) sucht nach dem Service und abonniert dann die Charakteristik, um bei jeder Änderung des Wertes der Charakteristik benachrichtigt zu werden.
+3. Der Server (E-Glove) schreibt Daten in die Charakteristik.
+4. Der Client (Zielrechner) liest die Daten aus der Charakteristik.
+...
+
+**Werte, die in die Charakteristik geschrieben werden und welche virtuelle Taste sie auslösen:**
+(Siehe "Microsoft Virtual-Key Codes" als Referenz: https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)
+
+| **Wert** | **Virtuelle Taste** | **Hexadezimalwert der virtuellen Taste** |
+| :------ | :----- | :----- |
+| 1 | RIGHT ARROW key | 0x27 |
+| 2 | LEFT ARROW key | 0x25 |
+| 3 | F5 key | 0x74 |
+| 4 | ESC key | 0x1B |
+| 5 | Next Track key | 0xB0 |
+| 6 | Previous Track key | 0xB1 |
+| 7 | Play/Pause Media key | 0xB3 |
+| 8 | Volume Up key | 0xAF |
+| 9 | Volume Down key | 0xAE |
+| 10 | Browser Forward key | 0xA7 |
+| 11 | Browser Back key | 0xA6 |
+| 12 | UP ARROW key | 0x26 |
+| 13 | DOWN ARROW key | 0x28 |
 
 ## 3.2 Softwarearchitektur
     - Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
