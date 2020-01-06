@@ -21,15 +21,15 @@ Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner e
 
 ## 2.1 Funktionale Anforderungen
 ### 2.1.1 Use Case Diagramm
-![UseCaseDiagramm_komplett](images/UseCaseDiagramm_komplett.png "UseCaseDiagramm_komplett")
+![UseCaseDiagramm_komplett](images/UseCaseDiagramm_komplett.png)
 
 ### 2.1.2 Anforderungsdiagramm
-![Funktionale Anforderungen](images/FR.png "Funktionale Anforderungen")
+![Funktionale Anforderungen](images/FR.png =250x)
 
 ## 2.2 Nicht-funktionale Anforderungen
 
 ### 2.2.1 Anforderungsdiagramm
-![Nicht-funktionale Anforderungen](images/NFR.png "Nicht-funktionale Anforderungen")
+![Nicht-funktionale Anforderungen](images/NFR.png)
 
 ### 2.2.2 Rahmenbedingungen
     - Normen, Standards, Protokolle, Hardware, externe Vorgaben
@@ -126,11 +126,11 @@ https://www.reichelt.de/entwicklerboards-kapazitiver-beruehrungssensor-debo-touc
 
 ### 3.1.1 Strukturdiagramm
 
-![Strukturdiagramm](images/Strukturdiagramm.png "Strukturdiagramm")
+![Strukturdiagramm](images/Strukturdiagramm.png)
 
 ### 3.1.2 Blockdefinitionsdiagramm: Physischer Aufbau
 
-![Blockdefinitionsdiagramm_physisch](images/Blockdefinitionsdiagramm_physisch.png "Blockdefinitionsdiagramm_physisch")
+![Blockdefinitionsdiagramm_physisch](images/Blockdefinitionsdiagramm_physisch.png)
 
 ### 3.1.3 Kommunikationsprotokoll
 Der E-Glove und der Zielrechner kommunizieren über Bluetooth, wobei der E-Glove als Server fungiert und der Zielrechner als Client.
@@ -175,11 +175,11 @@ Für den kompletten Ablauf der Kopplung zwischen Server und Client siehe 3.4, ve
 
 ### 3.5.1 Klassendiagramm (vereinfacht)
 
-![Klassendiagramm_reduziert](images/Klassendiagramm_reduziert.png "Klassendiagramm_reduziert")
+![Klassendiagramm_reduziert](images/Klassendiagramm_reduziert.png)
 
 ### 3.5.2 Klassendiagramm (vollständig)
 
-![Klassendiagramm_komplett](images/Klassendiagramm_komplett.png "Klassendiagramm_komplett")
+![Klassendiagramm_komplett](images/Klassendiagramm_komplett.png)
 
 # 4 Projektorganisation
 
