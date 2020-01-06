@@ -8,6 +8,10 @@ ModeSelector::ModeSelector(const int pinIndex, const int pinMiddle, const int pi
     this->pinMiddle = pinMiddle;
     this->pinRing = pinRing;
     this->pinPinky = pinPinky;
+    indexfinger = NULL;
+    middlefinger = NULL;
+    ringfinger = NULL;
+    pinkyfinger = NULL;
 }
 void ModeSelector::registerIndexFinger_CB(callback_function f){
     indexfinger = f;

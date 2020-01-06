@@ -55,12 +55,8 @@ void BleHandler::onDisconnect(BLEServer *pServer)
 }
 void BleHandler::onRead(BLECharacteristic *pCharacteristic)
 {
-    //read
-    pCharacteristic->setValue("Hello World!");
 }
 
 void BleHandler::onWrite(BLECharacteristic *pCharacteristic)
 {
-    //write
-    std::string value = pCharacteristic->getValue();
 }
