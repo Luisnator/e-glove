@@ -33,8 +33,11 @@ Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner e
 
 ### 2.2.2 Rahmenbedingungen
     - Normen, Standards, Protokolle, Hardware, externe Vorgaben
+
 #### Verwendete Hardware
+
 **M5Stack Core (+ Starter Kit)**
+
 https://m5stack.com/collections/m5-core/products/m5go-iot-starter-kit-stem-education
 
 - Betrieben durch einen ESP32.
@@ -46,6 +49,7 @@ https://m5stack.com/collections/m5-core/products/m5go-iot-starter-kit-stem-educa
 		- Das enthaltene Gyroskop, sowie der Beschleunigungssensor werden genutzt, um die Gesten zu erkennen.
 
 **Flexsensor**
+
 https://www.antratek.de/flex-sensor-2-2?gclid=EAIaIQobChMIppH7n8m35QIVmMx3Ch376AAcEAQYAyABEgJ9efD_BwE
 
 - An dem Ringfinger-Rücken besfestigt.
@@ -54,18 +58,21 @@ https://www.antratek.de/flex-sensor-2-2?gclid=EAIaIQobChMIppH7n8m35QIVmMx3Ch376A
 - Wenn der Sensor (und damit der Ringfinger) gebogen ist, heißt dies, dass der Benutzer eine Geste zur Steuerung des Zielrechners ausführen will.
 
 **Punkt Lasermodul**
+
 https://www.reichelt.de/punkt-lasermodul-rot-650-nm-03-6-vdc-9x20-mm-klasse-1-pico-70132441-p254487.html
 
 - Mittels einer 3D-gedruckten Halterung am Zeigefinger befestigt
 - Erweiternd zu den Präsentationsfunktionen des E-Glove als Zeigewerkzeug genutzt.
 
 **Bluetooth USB 2.0 Adapter**
+
 https://www.reichelt.de/micro-bluetooth-usb-2-0-adapter-v4-0-edr-logilink-bt0015a-p170030.html?&trstct=pol_0
 
 - Adapter, der dem angeschlossenen Rechner Bluetooth-Funktonalitäten verleiht.
 - Für die Nutzung mit Rechnern, die keine eingebaute Bluetooth-Funktonalität besitzen.
 
 **Kapazitiver Berührungssensor x4**
+
 https://www.reichelt.de/entwicklerboards-kapazitiver-beruehrungssensor-debo-touch-p253985.html
 
 - Befestigt an allen Fingerspitzen, außer dem Daumen.
@@ -74,6 +81,7 @@ https://www.reichelt.de/entwicklerboards-kapazitiver-beruehrungssensor-debo-touc
 
 ### 2.2.3 Betriebsbedingungen
     - Vorgaben des Kunden (z.B. Web Browser / Betriebssystem Versionen, Programmiersprache)
+
 #### Fremde Vorgaben
 1. Als Kernelement soll der **M5Stack Core** (https://m5stack.com/) genutzt werden.
 2. Als Framework für die Software-Entwicklung auf dem M5Stack, soll das **ESP-IDF** (https://github.com/espressif/esp-idf) genutzt werden.
@@ -115,10 +123,13 @@ https://www.reichelt.de/entwicklerboards-kapazitiver-beruehrungssensor-debo-touc
     - Systemarchitekturdiagramm ("Box-And-Arrow" Diagramm)
     - Schnittstellenbeschreibung
     - Kommunikationsprotokolle, Datenformate
+
 ### 3.1.1 Strukturdiagramm
+
 ![Strukturdiagramm](images/Strukturdiagramm.png "Strukturdiagramm")
 
 ### 3.1.2 Blockdefinitionsdiagramm: Physischer Aufbau
+
 ![Blockdefinitionsdiagramm_physisch](images/Blockdefinitionsdiagramm_physisch.png "Blockdefinitionsdiagramm_physisch")
 
 ### 3.1.3 Kommunikationsprotokoll
@@ -161,10 +172,13 @@ Für den kompletten Ablauf der Kopplung zwischen Server und Client siehe 3.4, ve
 
 ## 3.5 Entwurf
     - Detaillierte UML-Diagramme für relevante Softwarebausteine
+
 ### 3.5.1 Klassendiagramm (vereinfacht)
+
 ![Klassendiagramm_reduziert](images/Klassendiagramm_reduziert.png "Klassendiagramm_reduziert")
 
 ### 3.5.2 Klassendiagramm (vollständig)
+
 ![Klassendiagramm_komplett](images/Klassendiagramm_komplett.png "Klassendiagramm_komplett")
 
 # 4 Projektorganisation
