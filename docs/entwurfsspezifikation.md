@@ -85,8 +85,8 @@ https://www.reichelt.de/entwicklerboards-kapazitiver-beruehrungssensor-debo-touc
 #### Fremde Vorgaben
 1. Als Kernelement soll der **M5Stack Core** (https://m5stack.com/) genutzt werden.
 2. Als Framework für die Software-Entwicklung auf dem M5Stack, soll das **ESP-IDF** (https://github.com/espressif/esp-idf) genutzt werden.
-	2.1. Es sollen die Funktionalitäten von **FreeRTOS** (https://www.freertos.org/) genutzt werden, um Tasks zu erstellen und zu verwalten.
-3. Als Programmiersprache (auf dem M5Stack) soll **C / C++** genutzt werden.
+3. Es sollen die Funktionalitäten von **FreeRTOS** (https://www.freertos.org/) genutzt werden, um Tasks zu erstellen und zu verwalten.
+4. Als Programmiersprache (auf dem M5Stack) soll **C / C++** genutzt werden.
 
 ### 2.2.4 Qualitätsmerkmale
     - Externe Qualitätsanforderungen (z.B. Performance, Sicherheit, Zuverlässigkeit, Benutzerfreundlichkeit)
@@ -139,7 +139,7 @@ Für den kompletten Ablauf der Kopplung zwischen Server und Client siehe 3.4, ve
 2. Der Client (Zielrechner) sucht nach dem Service und abonniert dann die Charakteristik, um bei jeder Änderung des Wertes der Charakteristik benachrichtigt zu werden.
 3. Der Server (E-Glove) schreibt Daten in die Charakteristik.
 4. Der Client (Zielrechner) liest die Daten aus der Charakteristik.
-...
+5. Wiederhole ab 3.
 
 **Werte, die in die Charakteristik geschrieben werden und welche virtuelle Taste sie auslösen:**
 (Siehe "Microsoft Virtual-Key Codes" als Referenz: https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)
