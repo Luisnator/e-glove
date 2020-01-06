@@ -24,7 +24,7 @@ Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner e
 ![UseCaseDiagramm_komplett](images/UseCaseDiagramm_komplett.png)
 
 ### 2.1.2 Anforderungsdiagramm
-![Funktionale Anforderungen](images/FR.png){:height="50%" width="50%"}
+![Funktionale Anforderungen](images/FR.png){:height="1000px"}
 
 ## 2.2 Nicht-funktionale Anforderungen
 
