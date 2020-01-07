@@ -5,7 +5,7 @@ FlexSensor::FlexSensor(int pin, int accuracy)
     this->accuracy = accuracy;
     pinMode(pin,INPUT);
 }
-void FlexSensor::setAccuracy(int accuracy=3000)
+void FlexSensor::setAccuracy(int accuracy)
 {
     this->accuracy = accuracy;
 }

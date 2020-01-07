@@ -1,13 +1,7 @@
 #include <M5Stack.h>
 #include <Arduino.h>
-#include <BLEDevice.h>
-#include <BLEUtils.h>
-#include <BLEServer.h>
-#include <BLE2902.h>
-#include <MPU9250.h>
 #include "modeSelector.h"
 #include "stateMachine.h"
-#include "bluetooth.h"
 #if CONFIG_FREERTOS_UNICORE
 #define ARDUINO_RUNNING_CORE 0
 #else
