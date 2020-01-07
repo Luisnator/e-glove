@@ -36,13 +36,13 @@ void StateMachine::work()
         case laserpointer:
         {
             digitalWrite(laserpointer_pin, HIGH);
-            w_interval = 0;
+            w_interval = no_pause;
             break;
         }
         case browser:
         {
             int gesture = gr.getGesture();
-            w_interval = interval;
+            w_interval = long_pause;
             switch (gesture)
             {
             case LeftSwipe:
@@ -60,7 +60,7 @@ void StateMachine::work()
             case UpSwipe:
             {
                 //repeat 12 times
-                for (int i = 0; i < 12; i++)
+                for (int i = 0; i < scrollrepeat; i++)
                 {
                     bh.sendInt(scrollup);
                 }
@@ -70,7 +70,7 @@ void StateMachine::work()
             case DownSwipe:
             {
                 //repeat 12 times
-                for (int i = 0; i < 12; i++)
+                for (int i = 0; i < scrollrepeat; i++)
                 {
                     bh.sendInt(scrolldown);
                 }
@@ -80,20 +80,20 @@ void StateMachine::work()
             case LeftRoll:
             {
                 bh.sendInt(volumedown);
-                w_interval = 100;
+                w_interval = short_pause;
                 previousMillis = currentMillis;
                 break;
             }
             case RightRoll:
             {
                 bh.sendInt(volumeup);
-                w_interval = 100;
+                w_interval = short_pause;
                 previousMillis = currentMillis;
                 break;
             }
             default:
             {
-                w_interval = 0;
+                w_interval = no_pause;
                 break;
             }
             }
@@ -102,7 +102,7 @@ void StateMachine::work()
         case multimedia:
         {
             int gesture = gr.getGesture();
-            w_interval = interval;
+            w_interval = long_pause;
             switch (gesture)
             {
             case LeftSwipe:
@@ -133,19 +133,19 @@ void StateMachine::work()
             {
                 bh.sendInt(volumedown);
                 previousMillis = currentMillis;
-                w_interval = 100;
+                w_interval = short_pause;
                 break;
             }
             case RightRoll:
             {
                 bh.sendInt(volumeup);
                 previousMillis = currentMillis;
-                w_interval = 100;
+                w_interval = short_pause;
                 break;
             }
             default:
             {
-                w_interval = 0;
+                w_interval = no_pause;
                 break;
             }
             }
@@ -154,7 +154,7 @@ void StateMachine::work()
         case presentation:
         {
             int gesture = gr.getGesture();
-            w_interval = interval;
+            w_interval = long_pause;
             switch (gesture)
             {
             case LeftSwipe:
@@ -185,19 +185,19 @@ void StateMachine::work()
             {
                 bh.sendInt(volumedown);
                 previousMillis = currentMillis;
-                w_interval = 100;
+                w_interval = short_pause;
                 break;
             }
             case RightRoll:
             {
                 bh.sendInt(volumeup);
                 previousMillis = currentMillis;
-                w_interval = 100;
+                w_interval = short_pause;
                 break;
             }
             default:
             {
-                w_interval = 0;
+                w_interval = no_pause;
                 break;
             }
             }

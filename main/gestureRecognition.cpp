@@ -17,12 +17,12 @@ void GestureRecognition::init()
 }
 int GestureRecognition::getGesture()
 {
-    if (mpu.getGyro(0) < -100)
+    if (mpu.getGyro(z) < -vertical_threshold)
     {
         int time = millis();
         while(millis()-time < confirmtime)
         {}
-        if(mpu.getGyro(0) < -100)
+        if(mpu.getGyro(z) < -vertical_threshold)
         {
             return UpSwipe;
         }
@@ -31,12 +31,12 @@ int GestureRecognition::getGesture()
             return getGesture();
         }
     }
-    else if (mpu.getGyro(0) > 100)
+    else if (mpu.getGyro(z) > vertical_threshold)
     {
         int time = millis();
         while(millis()-time < confirmtime)
         {}
-        if(mpu.getGyro(0) > 100)
+        if(mpu.getGyro(z) > vertical_threshold)
         {
             return DownSwipe;
         }
@@ -45,12 +45,12 @@ int GestureRecognition::getGesture()
             return getGesture();
         }
     }
-    else if (mpu.getGyro(2) < -100)
+    else if (mpu.getGyro(x) < -horizontal_threshold)
     {
         int time = millis();
         while(millis()-time < confirmtime)
         {}
-        if(mpu.getGyro(2) < -100)
+        if(mpu.getGyro(x) < -horizontal_threshold)
         {
             return LeftSwipe;
         }
@@ -59,12 +59,12 @@ int GestureRecognition::getGesture()
             return getGesture();
         }
     }
-    else if (mpu.getGyro(2) > 100)
+    else if (mpu.getGyro(x) > horizontal_threshold)
     {
         int time = millis();
         while(millis()-time < confirmtime)
         {}
-        if(mpu.getGyro(2) > 100)
+        if(mpu.getGyro(x) > horizontal_threshold)
         {
             return RightSwipe;
         }
@@ -73,11 +73,11 @@ int GestureRecognition::getGesture()
             return getGesture();
         }
     }
-    else if (mpu.getPitch() > 60)
+    else if (mpu.getPitch() > leftpitch_threshold)
     {
         return LeftRoll;
     }
-    else if (mpu.getPitch() < -60)
+    else if (mpu.getPitch() < -rightpitch_threshold)
     {
         return RightRoll;
     }

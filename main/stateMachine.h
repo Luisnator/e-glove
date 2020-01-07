@@ -3,7 +3,7 @@
 #include <M5Stack.h>
 #include <Arduino.h>
 #include "gestureRecognition.h"
-#include "bluetooth.h"
+#include "bleHandler.h"
 #include "flexSensor.h"
 #include "DisplayHandler.h"
 enum{laserpointer,browser,multimedia,presentation};
@@ -12,14 +12,19 @@ class StateMachine
 {
     private:
     unsigned long previousMillis = 0;
-    const long interval = 500;
+    const int long_pause = 500;
+    const int short_pause = 100;
+    const int no_pause = 0; 
     int w_interval = 0;
-    const int laserpointer_pin = 26; 
+
+    const int laserpointer_pin = 26;
+    const int flexsensor_pin = 36;
+    const int scrollrepeat = 12; 
     int state = 0;
     GestureRecognition &gr = GestureRecognition::getGestureRecognition();
     BleHandler &bh = BleHandler::getBleHandler();
     DisplayHandler &dh = DisplayHandler::getDisplayHandler();
-    FlexSensor fs = FlexSensor(36,3000);
+    FlexSensor fs = FlexSensor(flexsensor_pin);
 
     public:
     StateMachine();
