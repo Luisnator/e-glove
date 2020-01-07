@@ -24,7 +24,7 @@ Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner e
 ![UseCaseDiagramm_komplett](images/UseCaseDiagramm_komplett.png)
 
 ### 2.1.2 Anforderungsdiagramm
-![Funktionale Anforderungen](images/FR.png){:width="200%"}
+![Funktionale Anforderungen](images/FR.png)
 
 ## 2.2 Nicht-funktionale Anforderungen
 
@@ -142,6 +142,7 @@ Für den kompletten Ablauf der Kopplung zwischen Server und Client siehe 3.4, ve
 5. Wiederhole ab 3.
 
 **Werte, die in die Charakteristik geschrieben werden und welche virtuelle Taste sie auslösen:**
+
 (Siehe "Microsoft Virtual-Key Codes" als Referenz: https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)
 
 | **Wert** | **Virtuelle Taste** | **Hexadezimalwert der virtuellen Taste** |
