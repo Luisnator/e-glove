@@ -1,24 +1,16 @@
-# e-glove
+# E-Glove
 
-## Bestellliste
+## Beschreibung
+Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner entwickelt, welches unter anderem die intuitive Steuerung von Präsentationen ermöglichen soll. Bei dem Gerät handelt es sich um einen Handschuh, also ein "wearable"-Gerät, welches sich per Bluetooth mit einem Zielrechner verbindet und im Akkubetrieb funktioniert. Der E-Glove wird an der rechten Hand getragen und erkennt bestimmte Gesten um daraufhin Befehle an einen Zielrechner zu senden. Sensoren an den Fingerspitzen bieten eine simple Form von Menüführung, um zwischen verschiedenen Funktionalitäten des Handschuhs zu wechseln, so ist beispielsweise die Kontrolle von Präsentationen, sowie Multimedia und von Browsern möglich. Für alle Funktionalitäten werden aber nur wenige unterschiedliche Gesten benötigt, die intuitiv mit der jeweiligen Funktion assoziierbar sind, wodurch der Umgang mit dem E-Glove einfach erlernbar ist. Beispielsweise führt eine Wischbewegung nach Links dazu, dass in einer Präsentation eine Folie weiter geschaltet wird, ein Verhalten, welches bereits ähnlich bei Smartphones genutzt wird und welches seinen Ursprung wohl bei dem Umblättern von Seiten eines Buches hat.
 
-**Akku (1 mal)**
-- Powerbank
-- 0,5m USB-Kabel für die Verbindung zum M5Stack
+## Gruppenmitglieder
 
-**Flexsensoren (1 mal)**
-- ca. 8cm
-- z.B.: https://www.antratek.de/flex-sensor-2-2?gclid=EAIaIQobChMIppH7n8m35QIVmMx3Ch376AAcEAQYAyABEgJ9efD_BwE
+### Luis Deutsch
 
-**Laserpointer (1 mal)**
-- z.B.: https://www.conrad.de/de/p/laserfuchs-lasermodul-punkt-rot-lfd650-1-12-9x20-816476.html
+https://github.com/Ironman321
 
-**Dongle (1 mal)**
-- z.B.: https://www.amazon.de/gp/product/B07NQ5YGDW?pf_rd_p=671e72bc-8864-4ab6-8ef7-60da5d6ead8c&pf_rd_r=YW6GX8PAND7K5K84YHS8
+https://github.com/Luisnator
 
+### Phillip Penner
 
-**Extend Serial I/O (1 mal)**
-- Link: https://m5stack.com/collections/m5-unit/products/official-extend-serial-i-o-unit
-
-**Kapazitive Sensoren**
-- debo touch
+https://github.com/Phillip51

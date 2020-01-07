@@ -1,0 +1,2 @@
+* [Readme](/)
+* [Entwurfsspezifikation](/entwurfsspezifikation.md)
