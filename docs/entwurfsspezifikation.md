@@ -171,6 +171,19 @@ Für den kompletten Ablauf der Kopplung zwischen Server und Client siehe 3.4, ve
     - Aktivitätsdiagramme für relevante Use Cases
     - Aktivitätsdiagramm für den Ablauf sämtlicher Use Cases
 
+### 3.4.1 Zustandsdiagramm des gesamten Systems
+
+![Zustandsdiagramm_komplett](images/Zustandsdiagramm_komplett.png)
+
+### 3.4.2 Zustandsdiagramm für Präsentations-, Multimedia- und Browsermodus
+
+![Zustandsdiagramm_RestlicheModi](images/Zustandsdiagramm_RestlicheModi.png)
+
+### 3.4.3 Zustandsdiagramm für den Laserpointermodus
+
+![Zustandsdiagramm_Laserpointer](images/Zustandsdiagramm_Laserpointer.png)
+
+
 ## 3.5 Entwurf
     - Detaillierte UML-Diagramme für relevante Softwarebausteine
 

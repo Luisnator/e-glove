@@ -4,8 +4,8 @@
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>105</x>
-      <y>14</y>
+      <x>182</x>
+      <y>0</y>
       <w>1015</w>
       <h>2107</h>
     </coordinates>
@@ -18,8 +18,8 @@ functional requirements
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>112</x>
-      <y>49</y>
+      <x>189</x>
+      <y>35</y>
       <w>196</w>
       <h>91</h>
     </coordinates>
@@ -36,8 +36,8 @@ Handschuhs zu wechseln."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>567</x>
-      <y>84</y>
+      <x>644</x>
+      <y>70</y>
       <w>105</w>
       <h>28</h>
     </coordinates>
@@ -48,8 +48,8 @@ Handschuhs zu wechseln."</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>133</x>
-      <y>497</y>
+      <x>210</x>
+      <y>483</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -67,8 +67,8 @@ werden."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>112</x>
-      <y>140</y>
+      <x>189</x>
+      <y>126</y>
       <w>21</w>
       <h>1932</h>
     </coordinates>
@@ -78,8 +78,8 @@ werden."</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>378</x>
-      <y>49</y>
+      <x>455</x>
+      <y>35</y>
       <w>196</w>
       <h>91</h>
     </coordinates>
@@ -95,8 +95,8 @@ Rechner zu verbinden."</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>658</x>
-      <y>42</y>
+      <x>735</x>
+      <y>28</y>
       <w>196</w>
       <h>252</h>
     </coordinates>
@@ -128,8 +128,8 @@ klassische Tastatursignale geschehen."
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>910</x>
-      <y>49</y>
+      <x>987</x>
+      <y>35</y>
       <w>196</w>
       <h>91</h>
     </coordinates>
@@ -144,8 +144,8 @@ erkennen können."</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>910</x>
-      <y>910</y>
+      <x>987</x>
+      <y>896</y>
       <w>175</w>
       <h>70</h>
     </coordinates>
@@ -160,8 +160,8 @@ nach Links erkennen können."</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>910</x>
-      <y>1001</y>
+      <x>987</x>
+      <y>987</y>
       <w>175</w>
       <h>70</h>
     </coordinates>
@@ -176,8 +176,8 @@ nach Rechts erkennen können."</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>910</x>
-      <y>1274</y>
+      <x>987</x>
+      <y>1260</y>
       <w>175</w>
       <h>77</h>
     </coordinates>
@@ -193,8 +193,8 @@ können."</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>910</x>
-      <y>1372</y>
+      <x>987</x>
+      <y>1358</y>
       <w>175</w>
       <h>77</h>
     </coordinates>
@@ -210,8 +210,8 @@ erkennen können."</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>910</x>
-      <y>1183</y>
+      <x>987</x>
+      <y>1169</y>
       <w>175</w>
       <h>70</h>
     </coordinates>
@@ -226,8 +226,8 @@ runter erkennen können."</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>910</x>
-      <y>1092</y>
+      <x>987</x>
+      <y>1078</y>
       <w>175</w>
       <h>70</h>
     </coordinates>
@@ -242,8 +242,8 @@ hoch erkennen können."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1092</x>
-      <y>140</y>
+      <x>1169</x>
+      <y>126</y>
       <w>21</w>
       <h>1281</h>
     </coordinates>
@@ -253,8 +253,8 @@ hoch erkennen können."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1078</x>
-      <y>938</y>
+      <x>1155</x>
+      <y>924</y>
       <w>35</w>
       <h>21</h>
     </coordinates>
@@ -264,8 +264,8 @@ hoch erkennen können."</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>133</x>
-      <y>1127</y>
+      <x>210</x>
+      <y>1113</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -283,8 +283,8 @@ werden."</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>133</x>
-      <y>2009</y>
+      <x>210</x>
+      <y>1995</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -300,8 +300,8 @@ Laserpointer aktiviert werden."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>112</x>
-      <y>539</y>
+      <x>189</x>
+      <y>525</y>
       <w>35</w>
       <h>21</h>
     </coordinates>
@@ -311,8 +311,8 @@ Laserpointer aktiviert werden."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>112</x>
-      <y>1169</y>
+      <x>189</x>
+      <y>1155</y>
       <w>35</w>
       <h>21</h>
     </coordinates>
@@ -322,8 +322,8 @@ Laserpointer aktiviert werden."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>112</x>
-      <y>2051</y>
+      <x>189</x>
+      <y>2037</y>
       <w>35</w>
       <h>21</h>
     </coordinates>
@@ -333,8 +333,8 @@ Laserpointer aktiviert werden."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1078</x>
-      <y>1029</y>
+      <x>1155</x>
+      <y>1015</y>
       <w>35</w>
       <h>21</h>
     </coordinates>
@@ -344,8 +344,8 @@ Laserpointer aktiviert werden."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1078</x>
-      <y>1120</y>
+      <x>1155</x>
+      <y>1106</y>
       <w>35</w>
       <h>21</h>
     </coordinates>
@@ -355,8 +355,8 @@ Laserpointer aktiviert werden."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1078</x>
-      <y>1211</y>
+      <x>1155</x>
+      <y>1197</y>
       <w>35</w>
       <h>21</h>
     </coordinates>
@@ -366,8 +366,8 @@ Laserpointer aktiviert werden."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1078</x>
-      <y>1400</y>
+      <x>1155</x>
+      <y>1386</y>
       <w>35</w>
       <h>21</h>
     </coordinates>
@@ -377,8 +377,8 @@ Laserpointer aktiviert werden."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1078</x>
-      <y>1302</y>
+      <x>1155</x>
+      <y>1288</y>
       <w>35</w>
       <h>21</h>
     </coordinates>
@@ -388,8 +388,8 @@ Laserpointer aktiviert werden."</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>322</y>
+      <x>518</x>
+      <y>308</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -407,8 +407,8 @@ Tastatursignal entsprechend
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>441</y>
+      <x>518</x>
+      <y>427</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -426,8 +426,8 @@ Tastatursignal entsprechend
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>560</y>
+      <x>518</x>
+      <y>546</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -445,8 +445,8 @@ Tastatursignal entsprechend
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>679</y>
+      <x>518</x>
+      <y>665</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -464,8 +464,8 @@ Tastatursignal entsprechend
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>364</y>
+      <x>399</x>
+      <y>350</y>
       <w>133</w>
       <h>147</h>
     </coordinates>
@@ -476,8 +476,8 @@ Tastatursignal entsprechend
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>504</y>
+      <x>399</x>
+      <y>490</y>
       <w>133</w>
       <h>28</h>
     </coordinates>
@@ -488,8 +488,8 @@ Tastatursignal entsprechend
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>560</y>
+      <x>399</x>
+      <y>546</y>
       <w>133</w>
       <h>28</h>
     </coordinates>
@@ -500,8 +500,8 @@ Tastatursignal entsprechend
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>588</y>
+      <x>399</x>
+      <y>574</y>
       <w>133</w>
       <h>161</h>
     </coordinates>
@@ -512,8 +512,8 @@ Tastatursignal entsprechend
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>917</y>
+      <x>707</x>
+      <y>903</y>
       <w>294</w>
       <h>28</h>
     </coordinates>
@@ -524,8 +524,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>1036</y>
+      <x>707</x>
+      <y>1022</y>
       <w>294</w>
       <h>28</h>
     </coordinates>
@@ -536,8 +536,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>1127</y>
+      <x>707</x>
+      <y>1113</y>
       <w>294</w>
       <h>28</h>
     </coordinates>
@@ -548,8 +548,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>1218</y>
+      <x>707</x>
+      <y>1204</y>
       <w>294</w>
       <h>28</h>
     </coordinates>
@@ -560,8 +560,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>833</y>
+      <x>518</x>
+      <y>819</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -579,8 +579,8 @@ Tastatursignal entsprechend
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>952</y>
+      <x>518</x>
+      <y>938</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -598,8 +598,8 @@ Tastatursignal entsprechend
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>1071</y>
+      <x>518</x>
+      <y>1057</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -617,8 +617,8 @@ Tastatursignal entsprechend
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>1190</y>
+      <x>518</x>
+      <y>1176</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -636,8 +636,8 @@ Tastatursignal entsprechend
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>1309</y>
+      <x>518</x>
+      <y>1295</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -655,8 +655,8 @@ ein Tastatursignal entsprechend
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>1428</y>
+      <x>518</x>
+      <y>1414</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -674,8 +674,8 @@ so soll ein Tastatursignal entsprechend
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>875</y>
+      <x>399</x>
+      <y>861</y>
       <w>133</w>
       <h>266</h>
     </coordinates>
@@ -686,8 +686,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>994</y>
+      <x>399</x>
+      <y>980</y>
       <w>133</w>
       <h>154</h>
     </coordinates>
@@ -698,8 +698,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>1141</y>
+      <x>399</x>
+      <y>1127</y>
       <w>133</w>
       <h>28</h>
     </coordinates>
@@ -710,8 +710,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>1183</y>
+      <x>399</x>
+      <y>1169</y>
       <w>133</w>
       <h>28</h>
     </coordinates>
@@ -722,8 +722,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>1211</y>
+      <x>399</x>
+      <y>1197</y>
       <w>133</w>
       <h>168</h>
     </coordinates>
@@ -734,8 +734,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>1218</y>
+      <x>399</x>
+      <y>1204</y>
       <w>133</w>
       <h>287</h>
     </coordinates>
@@ -746,8 +746,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>1309</y>
+      <x>707</x>
+      <y>1295</y>
       <w>294</w>
       <h>28</h>
     </coordinates>
@@ -758,8 +758,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>1428</y>
+      <x>707</x>
+      <y>1414</y>
       <w>294</w>
       <h>28</h>
     </coordinates>
@@ -770,8 +770,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>392</y>
+      <x>707</x>
+      <y>378</y>
       <w>294</w>
       <h>532</h>
     </coordinates>
@@ -782,8 +782,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>511</y>
+      <x>707</x>
+      <y>497</y>
       <w>294</w>
       <h>532</h>
     </coordinates>
@@ -794,8 +794,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>630</y>
+      <x>707</x>
+      <y>616</y>
       <w>294</w>
       <h>504</h>
     </coordinates>
@@ -806,8 +806,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>749</y>
+      <x>707</x>
+      <y>735</y>
       <w>294</w>
       <h>476</h>
     </coordinates>
@@ -818,8 +818,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>133</x>
-      <y>1750</y>
+      <x>210</x>
+      <y>1736</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -837,8 +837,8 @@ werden."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>112</x>
-      <y>1792</y>
+      <x>189</x>
+      <y>1778</y>
       <w>35</w>
       <h>21</h>
     </coordinates>
@@ -848,8 +848,8 @@ werden."</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>1575</y>
+      <x>518</x>
+      <y>1561</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -867,8 +867,8 @@ Tastatursignal entsprechend
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>1694</y>
+      <x>518</x>
+      <y>1680</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -886,8 +886,8 @@ Tastatursignal entsprechend
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>1932</y>
+      <x>518</x>
+      <y>1918</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -897,7 +897,7 @@ Tastatursignal entsprechend
 ID = "FR1344"
 Text = "Ist das System im Zustand für die 
 Browserkontrolle und wird ein 
-Wischen runter erkannt, so soll ein 
+Wischen hoch erkannt, so soll ein 
 Tastatursignal entsprechend 
 [Pfeiltaste unten] gesendet werden."</panel_attributes>
     <additional_attributes/>
@@ -905,8 +905,8 @@ Tastatursignal entsprechend
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>1813</y>
+      <x>518</x>
+      <y>1799</y>
       <w>196</w>
       <h>98</h>
     </coordinates>
@@ -916,7 +916,7 @@ Tastatursignal entsprechend
 ID = "FR1343"
 Text = "Ist das System im Zustand für die 
 Browserkontrolle und wird ein 
-Wischen hoch erkannt, so soll ein 
+Wischen runter erkannt, so soll ein 
 Tastatursignal entsprechend 
 [Pfeiltaste oben] gesendet werden."</panel_attributes>
     <additional_attributes/>
@@ -924,8 +924,8 @@ Tastatursignal entsprechend
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>182</x>
-      <y>189</y>
+      <x>259</x>
+      <y>175</y>
       <w>196</w>
       <h>91</h>
     </coordinates>
@@ -942,8 +942,8 @@ lesen."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>231</x>
-      <y>133</y>
+      <x>308</x>
+      <y>119</y>
       <w>77</w>
       <h>70</h>
     </coordinates>
@@ -954,8 +954,8 @@ lesen."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>1617</y>
+      <x>399</x>
+      <y>1603</y>
       <w>133</w>
       <h>147</h>
     </coordinates>
@@ -966,8 +966,8 @@ lesen."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>1757</y>
+      <x>399</x>
+      <y>1743</y>
       <w>133</w>
       <h>28</h>
     </coordinates>
@@ -978,8 +978,8 @@ lesen."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>1813</y>
+      <x>399</x>
+      <y>1799</y>
       <w>133</w>
       <h>28</h>
     </coordinates>
@@ -990,8 +990,8 @@ lesen."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>1841</y>
+      <x>399</x>
+      <y>1827</y>
       <w>133</w>
       <h>161</h>
     </coordinates>
@@ -1002,8 +1002,8 @@ lesen."</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>931</y>
+      <x>707</x>
+      <y>917</y>
       <w>294</w>
       <h>672</h>
     </coordinates>
@@ -1014,8 +1014,8 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>1050</y>
+      <x>707</x>
+      <y>1036</y>
       <w>294</w>
       <h>672</h>
     </coordinates>
@@ -1026,25 +1026,25 @@ m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>1141</y>
+      <x>707</x>
+      <y>1218</y>
       <w>294</w>
-      <h>700</h>
+      <h>609</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
-    <additional_attributes>400.0;10.0;330.0;10.0;330.0;970.0;10.0;970.0</additional_attributes>
+    <additional_attributes>400.0;10.0;330.0;10.0;330.0;840.0;10.0;840.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>1232</y>
+      <x>707</x>
+      <y>1134</y>
       <w>294</w>
-      <h>728</h>
+      <h>812</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 m2=&lt;&lt;deriveReqt&gt;&gt;</panel_attributes>
-    <additional_attributes>400.0;10.0;380.0;10.0;380.0;1010.0;10.0;1010.0</additional_attributes>
+    <additional_attributes>400.0;10.0;380.0;10.0;380.0;1130.0;10.0;1130.0</additional_attributes>
   </element>
 </diagram>
