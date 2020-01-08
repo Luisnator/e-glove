@@ -9,7 +9,7 @@ class GestureRecognition
     private:
     MPU9250 mpu;
     const int confirmtime = 300;
-    const int vertical_threshold = 100;
+    const int vertical_threshold = 150;
     const int horizontal_threshold = 100;
     const int leftpitch_threshold = 60;
     const int rightpitch_threshold = 60;

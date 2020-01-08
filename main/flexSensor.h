@@ -7,10 +7,11 @@ class FlexSensor
     private:
     int pin;
     int accuracy = 3000;
+    FlexSensor(int pin,int accuracy);
 
     public:
-    FlexSensor(int pin,int accuracy = 3000);
-    void setAccuracy(int accuracy = 3000);
+    static FlexSensor& getFlexSensor(int pin=36,int accuracy=2850);
+    void setAccuracy(int accuracy = 2850);
     bool isFlexed();
 };
 #endif

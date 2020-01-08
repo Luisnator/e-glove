@@ -24,7 +24,7 @@ int GestureRecognition::getGesture()
         {}
         if(mpu.getGyro(z) < -vertical_threshold)
         {
-            return UpSwipe;
+            return DownSwipe;
         }
         else
         {
@@ -38,7 +38,7 @@ int GestureRecognition::getGesture()
         {}
         if(mpu.getGyro(z) > vertical_threshold)
         {
-            return DownSwipe;
+            return UpSwipe;
         }
         else
         {
@@ -52,7 +52,7 @@ int GestureRecognition::getGesture()
         {}
         if(mpu.getGyro(x) < -horizontal_threshold)
         {
-            return LeftSwipe;
+            return RightSwipe;
         }
         else
         {
@@ -66,7 +66,7 @@ int GestureRecognition::getGesture()
         {}
         if(mpu.getGyro(x) > horizontal_threshold)
         {
-            return RightSwipe;
+            return LeftSwipe;
         }
         else
         {

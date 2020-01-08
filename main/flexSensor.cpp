@@ -19,5 +19,9 @@ bool FlexSensor::isFlexed()
     {
         return false;
     }
-    
+}
+FlexSensor &FlexSensor::getFlexSensor(int pin, int accuracy)
+{
+    static FlexSensor fs(pin,accuracy);
+    return fs; 
 }

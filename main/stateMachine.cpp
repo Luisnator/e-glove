@@ -62,7 +62,7 @@ void StateMachine::work()
                 //repeat 12 times
                 for (int i = 0; i < scrollrepeat; i++)
                 {
-                    bh.sendInt(scrollup);
+                    bh.sendInt(scrolldown);
                 }
                 previousMillis = currentMillis;
                 break;
@@ -72,7 +72,7 @@ void StateMachine::work()
                 //repeat 12 times
                 for (int i = 0; i < scrollrepeat; i++)
                 {
-                    bh.sendInt(scrolldown);
+                    bh.sendInt(scrollup);
                 }
                 previousMillis = currentMillis;
                 break;

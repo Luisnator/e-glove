@@ -10,9 +10,9 @@
 StateMachine sm;
 const int indexfinger = 2;
 const int middlefinger = 5;
-const int ringfinger = 17;
-const int pinkyfinger = 16;
-ModeSelector ms(indexfinger,middlefinger,ringfinger,pinkyfinger);
+const int ringfinger = 16;
+const int pinkyfinger = 17;
+ModeSelector ms(indexfinger, middlefinger, ringfinger, pinkyfinger);
 void index();
 void middle();
 void ring();
@@ -25,7 +25,7 @@ void setup()
   M5.begin();
   sm.init();
   // Initialize the M5Stack object
- 
+
   //M5.Lcd.print("E-Glove!");
   ms.registerIndexFinger_CB(index);
   ms.registermiddleFinger_CB(middle);
@@ -41,19 +41,32 @@ void loop()
 
 void index()
 {
-  sm.changeState(laserpointer);
+  if (!FlexSensor::getFlexSensor().isFlexed())
+  {
+    sm.changeState(presentation);
+  }
 }
 void middle()
 {
-  sm.changeState(browser);
+  if (!FlexSensor::getFlexSensor().isFlexed())
+  {
+    sm.changeState(multimedia);
+  }
 }
+
 void ring()
 {
-  sm.changeState(multimedia);
+  if (!FlexSensor::getFlexSensor().isFlexed())
+  {
+    sm.changeState(browser);
+  }
 }
 void pinky()
 {
-  sm.changeState(presentation);
+  if (!FlexSensor::getFlexSensor().isFlexed())
+  {
+    sm.changeState(laserpointer);
+  }
 }
 
 // The arduino task

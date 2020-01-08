@@ -12,7 +12,7 @@ class StateMachine
 {
     private:
     unsigned long previousMillis = 0;
-    const int long_pause = 500;
+    const int long_pause = 800;
     const int short_pause = 100;
     const int no_pause = 0; 
     int w_interval = 0;
@@ -24,7 +24,7 @@ class StateMachine
     GestureRecognition &gr = GestureRecognition::getGestureRecognition();
     BleHandler &bh = BleHandler::getBleHandler();
     DisplayHandler &dh = DisplayHandler::getDisplayHandler();
-    FlexSensor fs = FlexSensor(flexsensor_pin);
+    FlexSensor &fs = FlexSensor::getFlexSensor();
 
     public:
     StateMachine();
