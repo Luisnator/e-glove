@@ -7,7 +7,6 @@ void StateMachine::init()
 {
     gr.init();
     bh.setupBluetooth();
-    dh.init();
     dh.setDisplayState(state);
 }
 void StateMachine::changeState(int state)

@@ -1,9 +1,10 @@
 #include "modeSelector.h"
-ModeSelector::ModeSelector(const int pinIndex, const int pinMiddle, const int pinRing, const int pinPinky){
-    pinMode(pinIndex,INPUT);
-    pinMode(pinMiddle,INPUT);
-    pinMode(pinRing,INPUT);
-    pinMode(pinPinky,INPUT);
+ModeSelector::ModeSelector(const int pinIndex, const int pinMiddle, const int pinRing, const int pinPinky)
+{
+    pinMode(pinIndex, INPUT);
+    pinMode(pinMiddle, INPUT);
+    pinMode(pinRing, INPUT);
+    pinMode(pinPinky, INPUT);
     this->pinIndex = pinIndex;
     this->pinMiddle = pinMiddle;
     this->pinRing = pinRing;
@@ -13,19 +14,23 @@ ModeSelector::ModeSelector(const int pinIndex, const int pinMiddle, const int pi
     ringfinger = NULL;
     pinkyfinger = NULL;
 }
-void ModeSelector::registerIndexFinger_CB(callback_function f){
+void ModeSelector::registerIndexfinger_CB(callback_function f)
+{
     indexfinger = f;
-    attachInterrupt(digitalPinToInterrupt(pinIndex),indexfinger,RISING);
+    attachInterrupt(digitalPinToInterrupt(pinIndex), indexfinger, RISING);
 }
-void ModeSelector::registermiddleFinger_CB(callback_function f){
+void ModeSelector::registerMiddlefinger_CB(callback_function f)
+{
     middlefinger = f;
-    attachInterrupt(digitalPinToInterrupt(pinMiddle),middlefinger,RISING);
+    attachInterrupt(digitalPinToInterrupt(pinMiddle), middlefinger, RISING);
 }
-void ModeSelector::registerringFinger_CB(callback_function f){
+void ModeSelector::registerRingfinger_CB(callback_function f)
+{
     ringfinger = f;
-    attachInterrupt(digitalPinToInterrupt(pinRing),ringfinger,RISING);
+    attachInterrupt(digitalPinToInterrupt(pinRing), ringfinger, RISING);
 }
-void ModeSelector::registerpinkyfinger_CB(callback_function f){
+void ModeSelector::registerPinkyfinger_CB(callback_function f)
+{
     pinkyfinger = f;
-    attachInterrupt(digitalPinToInterrupt(pinPinky),pinkyfinger,RISING);
+    attachInterrupt(digitalPinToInterrupt(pinPinky), pinkyfinger, RISING);
 }

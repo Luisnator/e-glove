@@ -8,7 +8,6 @@ GestureRecognition &GestureRecognition::getGestureRecognition()
 
 GestureRecognition::GestureRecognition()
 {
-
 }
 void GestureRecognition::init()
 {
@@ -20,9 +19,10 @@ int GestureRecognition::getGesture()
     if (mpu.getGyro(z) < -vertical_threshold)
     {
         int time = millis();
-        while(millis()-time < confirmtime)
-        {}
-        if(mpu.getGyro(z) < -vertical_threshold)
+        while (millis() - time < confirmtime)
+        {
+        }
+        if (mpu.getGyro(z) < -vertical_threshold)
         {
             return DownSwipe;
         }
@@ -34,9 +34,10 @@ int GestureRecognition::getGesture()
     else if (mpu.getGyro(z) > vertical_threshold)
     {
         int time = millis();
-        while(millis()-time < confirmtime)
-        {}
-        if(mpu.getGyro(z) > vertical_threshold)
+        while (millis() - time < confirmtime)
+        {
+        }
+        if (mpu.getGyro(z) > vertical_threshold)
         {
             return UpSwipe;
         }
@@ -48,9 +49,10 @@ int GestureRecognition::getGesture()
     else if (mpu.getGyro(x) < -horizontal_threshold)
     {
         int time = millis();
-        while(millis()-time < confirmtime)
-        {}
-        if(mpu.getGyro(x) < -horizontal_threshold)
+        while (millis() - time < confirmtime)
+        {
+        }
+        if (mpu.getGyro(x) < -horizontal_threshold)
         {
             return RightSwipe;
         }
@@ -62,9 +64,10 @@ int GestureRecognition::getGesture()
     else if (mpu.getGyro(x) > horizontal_threshold)
     {
         int time = millis();
-        while(millis()-time < confirmtime)
-        {}
-        if(mpu.getGyro(x) > horizontal_threshold)
+        while (millis() - time < confirmtime)
+        {
+        }
+        if (mpu.getGyro(x) > horizontal_threshold)
         {
             return LeftSwipe;
         }
@@ -89,5 +92,5 @@ int GestureRecognition::getGesture()
 
 void GestureRecognition::updateMPU()
 {
-   mpu.update();
+    mpu.update();
 }
