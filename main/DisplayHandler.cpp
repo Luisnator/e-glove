@@ -3,10 +3,6 @@
 DisplayHandler::DisplayHandler()
 {
 }
-void DisplayHandler::init()
-{
-    //M5.begin();
-}
 DisplayHandler &DisplayHandler::getDisplayHandler()
 {
     static DisplayHandler dh;
@@ -17,9 +13,9 @@ void DisplayHandler::setDisplayState(const int state)
     switch (state)
     {
     case laserpointer:
-    {   
+    {
         M5.Lcd.fillScreen(RED);
-        M5.Lcd.setCursor(coords[0],coords[1]);
+        M5.Lcd.setCursor(coords[0], coords[1]);
         M5.Lcd.setTextColor(WHITE);
         M5.Lcd.setTextSize(text_size);
         M5.Lcd.print("Laserpointer");
@@ -28,7 +24,7 @@ void DisplayHandler::setDisplayState(const int state)
     case browser:
     {
         M5.Lcd.fillScreen(GREEN);
-        M5.Lcd.setCursor(coords[0],coords[1]);
+        M5.Lcd.setCursor(coords[0], coords[1]);
         M5.Lcd.setTextColor(BLACK);
         M5.Lcd.setTextSize(text_size);
         M5.Lcd.print("Browser");
@@ -37,7 +33,7 @@ void DisplayHandler::setDisplayState(const int state)
     case multimedia:
     {
         M5.Lcd.fillScreen(BLUE);
-        M5.Lcd.setCursor(coords[0],coords[1]);
+        M5.Lcd.setCursor(coords[0], coords[1]);
         M5.Lcd.setTextColor(WHITE);
         M5.Lcd.setTextSize(text_size);
         M5.Lcd.print("Multimedia");
@@ -46,7 +42,7 @@ void DisplayHandler::setDisplayState(const int state)
     case presentation:
     {
         M5.Lcd.fillScreen(YELLOW);
-        M5.Lcd.setCursor(coords[0],coords[1]);
+        M5.Lcd.setCursor(coords[0], coords[1]);
         M5.Lcd.setTextColor(BLACK);
         M5.Lcd.setTextSize(text_size);
         M5.Lcd.print("Presentation");

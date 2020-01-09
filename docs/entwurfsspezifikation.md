@@ -247,4 +247,3 @@ Zusammenführung der Funktionen.
 ## 5.3 Index
 
 
-

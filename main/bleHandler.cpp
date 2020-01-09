@@ -33,7 +33,6 @@ BleHandler &BleHandler::getBleHandler()
     return bh;
 }
 
-// Maximum 1 Byte großer Integer-Wert
 void BleHandler::sendInt(int val)
 {
     if (deviceConnected)

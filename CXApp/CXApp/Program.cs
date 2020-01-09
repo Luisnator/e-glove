@@ -13,6 +13,14 @@ namespace CXApp
         static private String serviceuuid = "4fafc201-1fb5-459e-8fcc-c5c9c331914b";
         static private String characteristicuuid = "beb5483e-36e1-4688-b7f5-ea07361b26a8";
         static private DeviceWatcher deviceWatcher;
+
+        public static string Serviceuuid { get => serviceuuid; set => serviceuuid = value; }
+        public static string Characteristicuuid { get => characteristicuuid; set => characteristicuuid = value; }
+        public static DeviceWatcher DeviceWatcher { get => deviceWatcher; set => deviceWatcher = value; }
+
+        /*
+         * Main function
+        */
         static void Main(string[] args)
         {
             Console.WriteLine("Starting");
@@ -22,12 +30,15 @@ namespace CXApp
             Console.WriteLine("Press a key to continue: ");
             Console.ReadLine();
         }
+        /*
+         * Setup the the bluetooth connection
+         */
         private static void setup()
         {
             // Query for extra properties you want returned
             string[] requestedProperties = { "System.Devices.Aep.DeviceAddress", "System.Devices.Aep.IsConnected" };
 
-            deviceWatcher =
+            DeviceWatcher =
                         DeviceInformation.CreateWatcher(
                                 BluetoothLEDevice.GetDeviceSelectorFromPairingState(false),
                                 requestedProperties,
@@ -35,45 +46,57 @@ namespace CXApp
 
             // Register event handlers before starting the watcher.
             // Added, Updated and Removed are required to get all nearby devices
-            deviceWatcher.Added += DeviceWatcher_Added;
-            deviceWatcher.Updated += DeviceWatcher_Updated;
-            deviceWatcher.Removed += DeviceWatcher_Removed;
+            DeviceWatcher.Added += DeviceWatcher_Added;
+            DeviceWatcher.Updated += DeviceWatcher_Updated;
+            DeviceWatcher.Removed += DeviceWatcher_Removed;
 
             // EnumerationCompleted and Stopped are optional to implement.
-            deviceWatcher.EnumerationCompleted += DeviceWatcher_EnumerationCompleted;
-            deviceWatcher.Stopped += DeviceWatcher_Stopped;
+            DeviceWatcher.EnumerationCompleted += DeviceWatcher_EnumerationCompleted;
+            DeviceWatcher.Stopped += DeviceWatcher_Stopped;
 
             // Start the watcher.
-            deviceWatcher.Start();
+            DeviceWatcher.Start();
         }
-
+        /*
+         * Callbackfunction for when the DeviceWatcher stopped
+         */
         private static void DeviceWatcher_Stopped(DeviceWatcher sender, object args)
         {
             Console.WriteLine("Stopped");
         }
-
+        /*
+         * Callbackfunction for when the enumeration is completed
+         */
         private static void DeviceWatcher_EnumerationCompleted(DeviceWatcher sender, object args)
         {
             Console.WriteLine("Enum complete");
         }
-
+        /*
+         * Callbackfunction for when a device is being removed
+         */
         private static void DeviceWatcher_Removed(DeviceWatcher sender, DeviceInformationUpdate device)
         {
             
             Console.WriteLine(String.Format("Removed Device with ID: {0}", device.Id));
         }
-
+        /*
+         * Callbackfunction for when the DeviceWatcher is being updated
+         */
         private static void DeviceWatcher_Updated(DeviceWatcher sender, DeviceInformationUpdate device)
         {
             Console.WriteLine(String.Format("Updated Device with ID: {0}", device.Id));
         }
-
+        /*
+         * Callbackfunction for when a device is being added
+         */
         private static void DeviceWatcher_Added(DeviceWatcher sender, DeviceInformation deviceInfo)
         {
             Console.WriteLine(String.Format("Added ID: {0} | Name: {1}", deviceInfo.Id, deviceInfo.Name));
             ConnectDevice(deviceInfo);
         }
-
+        /*
+         * Connect to a Device
+         */
         async static void ConnectDevice(DeviceInformation deviceInfo)
         {
             // Note: BluetoothLEDevice.FromIdAsync must be called from a UI thread because it may prompt for consent.
@@ -87,14 +110,16 @@ namespace CXApp
                 var services = result.Services;
                 for (int i = 0; i < services.Count; i++)
                 {
-                    if (services[i].Uuid.Equals(new Guid(serviceuuid)))
+                    if (services[i].Uuid.Equals(new Guid(Serviceuuid)))
                     {
                         SubscribeToServiceAsync(services[i]);
                     }
                 }
             }
         }
-
+        /*
+         * Subscribe to a Service
+         */
         async static void SubscribeToServiceAsync(GattDeviceService service)
         {
             Console.WriteLine(String.Format("Subscribing to: {0}", service.Uuid));
@@ -106,7 +131,7 @@ namespace CXApp
 
                 for (int i = 0; i < characteristics.Count; i++)
                 {
-                    if (characteristics[i].Uuid.Equals(new Guid(characteristicuuid)))
+                    if (characteristics[i].Uuid.Equals(new Guid(Characteristicuuid)))
                     {
                         try
                         {
@@ -122,7 +147,7 @@ namespace CXApp
                         catch
                         {
                             Console.WriteLine("Error during subscription.");
-                            deviceWatcher.Stop();
+                            DeviceWatcher.Stop();
                             setup();
 
                         }
@@ -132,7 +157,9 @@ namespace CXApp
                 }
             }
         }
-
+        /*
+         * Callbackfunction for when the value of the characteristic changed
+         */
         static void Characteristic_ValueChanged(GattCharacteristic sender, GattValueChangedEventArgs args)
         {
             // An Indicate or Notify reported that the value has changed.
@@ -142,12 +169,13 @@ namespace CXApp
             Console.WriteLine(String.Format("Value read: {0}", value));
             GenerateKeypress(value);
         }
- 
+        /*
+        * Simulate a keypress 
+        */
         static void GenerateKeypress(int val)
         {
             InputInjector inputInjector = InputInjector.TryCreate();
             var info = new InjectedInputKeyboardInfo();
-
             switch (val)
             {
                 case 1: //Next Page (Presentation)
