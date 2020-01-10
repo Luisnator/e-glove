@@ -240,12 +240,12 @@ https://www.reichelt.de/entwicklerboards-kapazitiver-beruehrungssensor-debo-touc
 
 ## 3.6 Entwurfsmuster / Programmier-Prinzipien
 
-### 3.6.1 Verwendung des Singeltonpatterns
+### 3.6.1 Verwendung des Singelton-Patterns
 
 ![Singelton_pattern](images/singelton_pattern.png)
 
-Da viele Komponenten bei multiplen Zugriffinstanzen Probleme verursachen können, wurde bei einigen Klassen das Singeltonpattern genutzt.
-In diesem Programm verwenden folgende Klassen, dass Singeltonpattern:
+Da viele Komponenten bei multiplen Zugriffinstanzen Probleme verursachen können, wurde bei einigen Klassen das Singelton-Pattern genutzt.
+In diesem Programm verwenden folgende Klassen das Singelton-Pattern:
 
 * **BleHandler**
 * **FlexSensor**
@@ -254,8 +254,8 @@ In diesem Programm verwenden folgende Klassen, dass Singeltonpattern:
 
 ### 3.6.2 Objektorientierte Programmierung
 
-Um eine bessere Datenkapselung und Zugriffskontrolle zu haben, wurde hauptsächlich objektorientierte Programmierung angewandt.
-[siehe Klassendiagramm](#_351-klassendiagramm-vereinfacht)
+Um eine bessere Datenkapselung und Zugriffskontrolle zu ermöglichen, wurde hauptsächlich objektorientierte Programmierung angewandt.
+([Siehe Klassendiagramm](#_351-klassendiagramm-vereinfacht))
 
 # 4 Projektorganisation
 
