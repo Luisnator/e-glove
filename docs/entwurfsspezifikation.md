@@ -1,10 +1,9 @@
 # E-Glove
-## Entwurfsspezifikation
+# Entwurfsspezifikation
 ### Autoren
-Luis Deutsch
+Luis Deutsch <br>
 Phillip Penner
 
-### Inhaltsverzeichnis
 
 # 1 Einführung
 
@@ -13,9 +12,29 @@ Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner e
 
 
 ## 1.2 Ziele
-    - Anwendungsbereiche, Motivation, Umfang, Marktanforderungen, Alleinstellungsmerkmale
-    - Informationen zu Zielbenutzergruppen und deren Merkmale (Bildung, Erfahrung, Sachkenntnis)
-    - Abgrenzung (Was ist das Softwaresystem _nicht_)
+
+- Ziel dieses Projekts ist es ein Eingabegerät zu entwickeln, mit dem primär die Steuerung von Präsentationen möglich sein soll.
+- Als Grundlage soll ein Handschuh dienen, an dem die meisten Komponenten befestigt werden sollen.
+- Der E-Glove soll kabellos nutzbar sein und sich mit einem Zielrechner verbinden können.
+- Der Umgang mit dem E-Glove soll ...
+	- ... intuitiv möglich sein.
+	- ... einfach zu lernen sein.
+	- ... Spaß machen.
+
+### 1.2.1 Motivation
+- Die Kontrolle von Präsentationen am Computer ist häufig nicht sehr intuitiv oder benutzerfreundlich.
+- Das Verwenden von natürlichen Gesten zur Steuerung von Computern ist bereits im Alltag etabliert (siehe Touchsteuerung bei Smartphones).
+- Es existieren bisher wenig intuitive Eingabemöglichkeiten bei klassischen Desktop-PCs und Laptops.
+- Bei der Benutzung von herkömmlichen Werkzeugen für die Präsentationssteuerung, bleibt bei vielen Päsentierenden Körpersprache und Gestik auf der Strecke.
+
+### 1.2.2 Anwendungsbereich
+
+- Der E-Glove kann überall dort Anwendung finden, wo Präsentationen auf Basis von Folien über einen Rechner gehalten werden.
+- Beispielsweise:
+	- Präsentationen im Büroumfeld
+	- Präsentationen und Vorträge im Lehrumfeld (sowohl Lehrende, als auch Studenten oder Schüler)
+	- Bühnenvorträge vor Publikum
+	- ...
 
 # 2 Anforderungen
 
@@ -39,8 +58,8 @@ Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner e
 3. Es sollen die Funktionalitäten von **FreeRTOS** (https://www.freertos.org/) genutzt werden, um Tasks zu erstellen und zu verwalten.
 4. Als Programmiersprache (auf dem M5Stack) soll **C / C++** genutzt werden.
 
-### 2.2.3 Qualitätsmerkmale
-    - Externe Qualitätsanforderungen (z.B. Performance, Sicherheit, Zuverlässigkeit, Benutzerfreundlichkeit)
+#### Eigene Vorgaben
+1. Der E-Glove soll primär für Windows 10 - Rechner entwickelt werden.
 
 
 # 3 Technische Beschreibung
@@ -139,7 +158,15 @@ https://www.reichelt.de/entwicklerboards-kapazitiver-beruehrungssensor-debo-touc
 
 ### E-Glove (Oberseite)
 
+![handschuh_oben](images/photos/handschuh_oben.jpg ':size=600')<br>
+
 ### E-Glove (Unterseite)
+
+![handschuh_unten](images/photos/handschuh_unten.jpg ':size=600')<br>
+
+### E-Glove (Seitenansicht)
+
+![handschuh_seite](images/photos/handschuh_seite.jpg ':size=600')<br>
 
 ### Kapazitive Sensoren in der Nahaufnahme
 
@@ -171,8 +198,11 @@ https://www.reichelt.de/entwicklerboards-kapazitiver-beruehrungssensor-debo-touc
 
 ### Inaktiver Zustand (keine Gesten werden gelesen)
 
+![handschuh_inaktiv_neu](images/photos/handschuh_inaktiv_neu.jpg ':size=600')<br>
+
 ### Aktiver Zustand (Gesten werden gelesen)
 
+![handschuh_aktiv_neu](images/photos/handschuh_aktiv_neu.jpg ':size=600')<br>
 
 
 ## 3.4 Abläufe
@@ -199,7 +229,6 @@ https://www.reichelt.de/entwicklerboards-kapazitiver-beruehrungssensor-debo-touc
 
 
 ## 3.5 Entwurf
-    - Detaillierte UML-Diagramme für relevante Softwarebausteine
 
 ### 3.5.1 Klassendiagramm (vereinfacht)
 
@@ -211,17 +240,7 @@ https://www.reichelt.de/entwicklerboards-kapazitiver-beruehrungssensor-debo-touc
 
 # 4 Projektorganisation
 
-## 4.1 Annahmen
-    - Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
-    - Verwendete Technologien (Programmiersprache, Frameworks, etc.)
-    - Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
-    - Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
-
-## 4.2 Verantwortlichkeiten
-    - Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
-    - Rollendefinition und Zuordnung
-
-## 4.3 Grober Projektplan
+## 4.1 Grober Projektplan
 
 ### Meilenstein 1 (Bis: 18.11.2019)
 Handschuh bauen und in die Komponenten einarbeiten.
@@ -239,11 +258,43 @@ Zusammenführung der Funktionen.
 # 5 Anhänge
 
 ## 5.1 Glossar
-    - Definitionen, Abkürzungen, Begriffe
 
-## 5.2 Referenzen
-    - Handbücher, Gesetze
+##### Charakteristik
 
-## 5.3 Index
+https://www.bluetooth.com/specifications/gatt/characteristics/
+
+Eine Charakteristik ist im Bluetooth-Kontext ein Attribut eines Bluetooth-Service (siehe unten), welches einen bestimmten Wert hält. Diese Charakteristika können dann beispielsweise von einem anderen System, welches sich mit dem Bluetooth-Gerät verbunden hat, ausgelesen oder beschrieben werden. So kann ein Bluetooth-Server (siehe unten), welcher den Service mit den Charakteristika besitzt, mit einem Bluetooth-Client (siehe unten) hin und her kommunizieren.
+
+##### Client
+
+Ein Client ist im Bluetooth-Kontext ist ein System, welches sich mit einem Bluetooth-Server (siehe unten) verbindet um auf diesem von Charakteristika (siehe oben) zu lesen bzw. diese zu beschreiben.
+
+
+##### Server
+
+Ein Server ist im Bluetooth-Kontext ist ein System, welches gewisse Services (siehe unten) und dazugehörige Charakteristika (siehe oben) besitzt. Mit dem Server können sich ein oder mehrere Clients (siehe oben) verbinden und von den Charakteristika lesen bzw. diese beschreiben um so mit dem Server und / oder gewissen anderen Clients zu kommunizieren.
+
+##### Service
+
+https://www.bluetooth.com/specifications/gatt/services/
+
+Ein Service ist im Bluetooth-Kontext eine Ansammlung von Charakteristika (siehe oben) und Beziehungen zu anderen Services. Services können so einen Teil des Verhaltens eines Bluetooth-Geräts darstellen.
+
+##### Virtuelle Taste
+
+Virtuelle Tasten sind eine Funktionalität von Windows-Betriebssystemen, um Tastenanschläge von u.a. Tastaturen über Software zu simulieren. Dafür existieren Zahlenwerte die die Tasten repräsentieren und Bibliotheken, um diese an das Betriebssystem weiterzuleiten.
+Referenz der Virtuellen Tasten und welche Werte sie haben:
+
+https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+
+##### Wearable
+
+https://de.wikipedia.org/wiki/Wearable_Computing
+
+Unter "Wearables" versteht man im Bereich der IT Computersysteme, die die Form eines Kleidungsstücks annehmen oder in Kleidungsstücke eingearbeitet sind. Ein Wearable wird also vom Anwender während der Benutzung am Körper getragen.
+
+##### Zielrechner
+
+Der Zielrechner ist im Kontext dieses Projekts der Rechner, mit dem der E-Glove verbunden wird. Auf diesem Rechner findet dann z.B. auch die Präsentation statt, die über den E-Glove kontrolliert werden soll.
 
 
