@@ -258,10 +258,10 @@ Um eine bessere Datenkapselung und Zugriffskontrolle zu ermöglichen, wurde haup
 
 ## 3.7 Wichtige Bibliotheken, Frameworks und Schnittstellen
 
-##### E-Glove
+### E-Glove
 
 
-##### CXApp
+### CXApp
 
 - Input injection / Eingabeeinfügung
 	- Dient der Simulation von Tastenanschlägen bzw. der Weiterleitung dieser an das System außerhalb des Programms.
@@ -308,50 +308,50 @@ Diese Anwendung ist in C# geschrieben und ist auch im Repository dieses Projekts
 
 ## 6.1 Glossar
 
-##### Charakteristik
+### Charakteristik
 
 https://www.bluetooth.com/specifications/gatt/characteristics/
 
 Eine Charakteristik ist im Bluetooth-Kontext ein Attribut eines Bluetooth-Service (siehe unten), welches einen bestimmten Wert hält. Diese Charakteristika können dann beispielsweise von einem anderen System, welches sich mit dem Bluetooth-Gerät verbunden hat, ausgelesen oder beschrieben werden. So kann ein Bluetooth-Server (siehe unten), welcher den Service mit den Charakteristika besitzt, mit einem Bluetooth-Client (siehe unten) hin und her kommunizieren.
 
-##### Client
+### Client
 
 Ein Client ist im Bluetooth-Kontext ist ein System, welches sich mit einem Bluetooth-Server (siehe unten) verbindet um auf diesem von Charakteristika (siehe oben) zu lesen bzw. diese zu beschreiben.
 
-##### E-Glove
+### E-Glove
 
 Der Begriff E-Glove umfasst das Gesamte Projekt welches in diesem Dokument beschrieben wird. In speziellen Fällen wird dieser Begriff aber auch genutzt, um auf das Kontrukt des Handschuhs samt zugehöriger Elektronik (M5Stack, Sensoren, ...) im speziellen zu verweisen. Dies geschieht hauptsächlich wenn die Begriffe "E-Glove" und "Zielrechner" (siehe unten) differenziert werden sollen.
 
-##### Server
+### Server
 
 Ein Server ist im Bluetooth-Kontext ist ein System, welches gewisse Services (siehe unten) und dazugehörige Charakteristika (siehe oben) besitzt. Mit dem Server können sich ein oder mehrere Clients (siehe oben) verbinden und von den Charakteristika lesen bzw. diese beschreiben um so mit dem Server und / oder gewissen anderen Clients zu kommunizieren.
 
-##### Service
+### Service
 
 https://www.bluetooth.com/specifications/gatt/services/
 
 Ein Service ist im Bluetooth-Kontext eine Ansammlung von Charakteristika (siehe oben) und Beziehungen zu anderen Services. Services können so einen Teil des Verhaltens eines Bluetooth-Geräts darstellen.
 
-##### UWP-App / UWP-Programm
+### UWP-App / UWP-Programm
 
 https://docs.microsoft.com/de-de/windows/uwp/get-started/universal-application-platform-guide
 
 Eine UWP-App ist eine Windows-spezifische Anwendung, der es möglich ist restriktierte Schnittstellen des Windows-Betriebssystems zu nutzen. Diese Anwendungen müssen einigen Prinzipien folgen, die u.a. für erhöhte Sicherheit sorgen, da diese Anwendungen hauptsächlich für den Vertrieb über den Windows-Store gedacht sind. So läuft eine solche Anwendung beispielsweise permanent in einer Sandbox und Zugriffe, die aus dieser Sandbox herausgehen, müssen von dem jeweiligen Nutzer genehmigt werden.
 
-##### Virtuelle Taste
+### Virtuelle Taste
 
 Virtuelle Tasten sind eine Funktionalität von Windows-Betriebssystemen, um Tastenanschläge von u.a. Tastaturen über Software zu simulieren. Dafür existieren Zahlenwerte die die Tasten repräsentieren und Bibliotheken, um diese an das Betriebssystem weiterzuleiten.
 Referenz der Virtuellen Tasten und welche Werte sie haben:
 
 https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
 
-##### Wearable
+### Wearable
 
 https://de.wikipedia.org/wiki/Wearable_Computing
 
 Unter "Wearables" versteht man im Bereich der IT Computersysteme, die die Form eines Kleidungsstücks annehmen oder in Kleidungsstücke eingearbeitet sind. Ein Wearable wird also vom Anwender während der Benutzung am Körper getragen.
 
-##### Zielrechner
+### Zielrechner
 
 Der Zielrechner ist im Kontext dieses Projekts der Rechner, mit dem der E-Glove verbunden wird. Auf diesem Rechner findet dann z.B. auch die Präsentation statt, die über den E-Glove kontrolliert werden soll.
 
