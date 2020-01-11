@@ -306,7 +306,17 @@ Diese Anwendung ist in C# geschrieben und ist auch im Repository dieses Projekts
 
 # 6 Anhänge
 
-## 6.1 Glossar
+## 6.1 CAD-Dateien
+
+### 6.1.1 M5stack Halterung:
+
+![M5Stack_Case](images/m5stack_case.PNG)
+
+### 6.1.2 Laserpointer Halterung:
+
+![M5Stack_Case](images/laserpointer_case.png)
+
+## 6.2 Glossar
 
 ### Charakteristik
 
