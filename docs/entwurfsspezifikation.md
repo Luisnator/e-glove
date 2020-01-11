@@ -254,8 +254,26 @@ In diesem Programm verwenden folgende Klassen das Singelton-Pattern:
 
 ### 3.6.2 Objektorientierte Programmierung
 
-Um eine bessere Datenkapselung und Zugriffskontrolle zu ermöglichen, wurde hauptsächlich objektorientierte Programmierung angewandt.
-([Siehe Klassendiagramm](#_351-klassendiagramm-vereinfacht))
+Um eine bessere Datenkapselung und Zugriffskontrolle zu ermöglichen, wurde hauptsächlich objektorientierte Programmierung angewandt ([siehe Klassendiagramm](#_351-klassendiagramm-vereinfacht)).
+
+## 3.7 Wichtige Bibliotheken, Frameworks und Schnittstellen
+
+##### E-Glove
+
+
+##### CXApp
+
+- Input injection / Eingabeeinfügung
+	- Dient der Simulation von Tastenanschlägen bzw. der Weiterleitung dieser an das System außerhalb des Programms.
+	- Notwendig in der Sandbox von UWP-Apps.
+	- Referenz:
+		- https://docs.microsoft.com/de-de/windows/uwp/design/input/input-injection
+		- https://docs.microsoft.com/de-de/uwp/api/windows.ui.input.preview.injection
+- Windows Bluetooth API
+	- Ermöglicht die Kommunikation eines UWP-Programm mit Bluetooth-Geräten.
+	- Referenz:
+		- https://docs.microsoft.com/de-de/uwp/api/Windows.Devices.Bluetooth
+
 
 # 4 Projektorganisation
 
@@ -274,9 +292,21 @@ Registrierung von Gesten.
 Zusammenführung der Funktionen.
 
 
-# 5 Anhänge
+# 5 Probleme
 
-## 5.1 Glossar
+## 5.1 Bluetoothkommunikation zwischen E-Glove und Zielrechner
+
+Der ursprüngliche Plan war es, die Kommunkation zwischen E-Glove und Zielrechner ohne spezielle Software auf dem Zielrechner zu ermöglichen. Zu diesem Zweck sollte die Bluetooth-Funktionalität auf dem M5Stack so eingerichtet werden, dass dieser von dem Zielrechner als Bluetooth-Eingabegerät (z.B. Tastatur) erkannt wird. Auf diesem Weg wäre es möglich gewesen, alle für dieses Projekt relevanten Befehle direkt an den Zielrechner zu senden. Da allerdings Bibliotheken und dazugehörige Dokumentation für die Bluetooth-Funktionen auf dem M5Stack / ESP32 sehr begrenzt waren, war es uns nur möglich reguläre Character über diese Methode zu versenden, was für unsere Zecke nicht ausgereicht hätte.
+
+Um den zeitlichen Rahmen dieses Projekts einhalten zu können, mussten wir uns somit umorientieren und einen Workaround entwickeln. Wir entschlossen nun doch eine (möglichst kompakte) Software auf dem Zielrechner zu verwenden. Allerdings hat sich schnell gezeigt, dass auf Windows - Systemen die meisten Programme und Skripte nicht mit den Bluetooth-Funktionen des Systems interagieren können, da diese von Windows gekapselt werden.
+Somit stellte sich heraus, dass eine der wenigen Möglichkeiten der Interaktion (auf Programmebene) mit den Bluetooth-Schnittstellen von Windows ist, eine sogenannte UWP-App (universelle Windows-Plattform Applikation https://docs.microsoft.com/de-de/windows/uwp/get-started/universal-application-platform-guide) zu entwickeln.
+
+Diese Anwendung ist in C# geschrieben und ist auch im Repository dieses Projekts zu finden, unter "CXApp". Da es sich hierbei um einen Workaround handelt, ist die Anwendung möglichst einfach gehalten.
+
+
+# 6 Anhänge
+
+## 6.1 Glossar
 
 ##### Charakteristik
 
@@ -288,6 +318,9 @@ Eine Charakteristik ist im Bluetooth-Kontext ein Attribut eines Bluetooth-Servic
 
 Ein Client ist im Bluetooth-Kontext ist ein System, welches sich mit einem Bluetooth-Server (siehe unten) verbindet um auf diesem von Charakteristika (siehe oben) zu lesen bzw. diese zu beschreiben.
 
+##### E-Glove
+
+Der Begriff E-Glove umfasst das Gesamte Projekt welches in diesem Dokument beschrieben wird. In speziellen Fällen wird dieser Begriff aber auch genutzt, um auf das Kontrukt des Handschuhs samt zugehöriger Elektronik (M5Stack, Sensoren, ...) im speziellen zu verweisen. Dies geschieht hauptsächlich wenn die Begriffe "E-Glove" und "Zielrechner" (siehe unten) differenziert werden sollen.
 
 ##### Server
 
@@ -298,6 +331,12 @@ Ein Server ist im Bluetooth-Kontext ist ein System, welches gewisse Services (si
 https://www.bluetooth.com/specifications/gatt/services/
 
 Ein Service ist im Bluetooth-Kontext eine Ansammlung von Charakteristika (siehe oben) und Beziehungen zu anderen Services. Services können so einen Teil des Verhaltens eines Bluetooth-Geräts darstellen.
+
+##### UWP-App / UWP-Programm
+
+https://docs.microsoft.com/de-de/windows/uwp/get-started/universal-application-platform-guide
+
+Eine UWP-App ist eine Windows-spezifische Anwendung, der es möglich ist restriktierte Schnittstellen des Windows-Betriebssystems zu nutzen. Diese Anwendungen müssen einigen Prinzipien folgen, die u.a. für erhöhte Sicherheit sorgen, da diese Anwendungen hauptsächlich für den Vertrieb über den Windows-Store gedacht sind. So läuft eine solche Anwendung beispielsweise permanent in einer Sandbox und Zugriffe, die aus dieser Sandbox herausgehen, müssen von dem jeweiligen Nutzer genehmigt werden.
 
 ##### Virtuelle Taste
 
