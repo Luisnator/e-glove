@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>1370</x>
+      <y>190</y>
+      <w>450</w>
+      <h>980</h>
+    </coordinates>
+    <panel_attributes>Zielrechner
+valign=top
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>370</x>
+      <y>190</y>
+      <w>260</w>
+      <h>980</h>
+    </coordinates>
+    <panel_attributes>Benutzer
+valign=top
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>630</x>
+      <y>190</y>
+      <w>740</w>
+      <h>980</h>
+    </coordinates>
+    <panel_attributes>E-Glove
+valign=top
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>490</x>
+      <y>240</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=initial
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>250</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>410</x>
+      <y>450</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Schließe Hand /
+biege kleinen Finger
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>670</x>
+      <y>310</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Wechsel in
+Browser-Modus
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>410</x>
+      <y>730</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Führe Geste aus
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>410</x>
+      <y>310</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Berühre Ringfinger
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>330</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>670</x>
+      <y>450</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Gehe in aktiven
+Zustand
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>470</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>750</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>920</x>
+      <y>740</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>type=decision
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1150</x>
+      <y>730</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Sende 
+"Seite weiter"
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>610</y>
+      <w>300</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18
+m2=[ keine Geste erkannt ]</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0;100.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>360</y>
+      <w>290</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;50.0;270.0;50.0;270.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>640</y>
+      <w>290</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;50.0;270.0;50.0;270.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>670</x>
+      <y>730</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Erkenne Geste
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>750</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>670</x>
+      <y>590</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Warte auf Geste
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>500</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>750</y>
+      <w>220</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18
+m2=[ Wischen links ]</panel_attributes>
+    <additional_attributes>200.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>940</x>
+      <y>760</y>
+      <w>230</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18
+[ Wischen rechts ]</panel_attributes>
+    <additional_attributes>210.0;80.0;10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>930</x>
+      <y>770</y>
+      <w>240</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18
+[ Wischen hoch ]</panel_attributes>
+    <additional_attributes>220.0;150.0;10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>920</x>
+      <y>760</y>
+      <w>250</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18
+[ Wischen runter ]</panel_attributes>
+    <additional_attributes>230.0;240.0;10.0;240.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1150</x>
+      <y>810</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Sende 
+"Seite zurück"
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1150</x>
+      <y>890</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Sende 
+"Scrollen runter"
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1150</x>
+      <y>970</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Sende 
+"Scrollen hoch"
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1320</x>
+      <y>750</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1420</x>
+      <y>730</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Erzeuge virtuellen 
+Tastendruck 
+"Browser weiter"
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1420</x>
+      <y>810</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Erzeuge virtuellen 
+Tastendruck 
+"Browser zurück"
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1420</x>
+      <y>890</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Erzeuge virtuellen 
+Tastendruck 
+"Pfeiltaste Unten"
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1420</x>
+      <y>970</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Erzeuge virtuellen 
+Tastendruck 
+"Pfeiltaste Oben"
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1320</x>
+      <y>830</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1320</x>
+      <y>910</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1320</x>
+      <y>990</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>1710</x>
+      <y>860</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>type=decision
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1590</x>
+      <y>830</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>130.0;40.0;70.0;40.0;70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1590</x>
+      <y>880</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>130.0;10.0;70.0;10.0;70.0;40.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1590</x>
+      <y>890</y>
+      <w>160</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>140.0;10.0;140.0;110.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1590</x>
+      <y>750</y>
+      <w>160</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>140.0;110.0;140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1740</x>
+      <y>870</y>
+      <w>60</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes>40.0;240.0;40.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>1770</x>
+      <y>1110</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=final
+lw=2
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

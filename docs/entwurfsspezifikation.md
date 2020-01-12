@@ -154,7 +154,58 @@ https://www.reichelt.de/entwicklerboards-kapazitiver-beruehrungssensor-debo-touc
 - Dienen zur Auswahl der verschiedenen Modi des Handschuhs ("Menüführung").
 - Der Daumen ist bei dem E-Glove frei, mit diesem weden die Sensoren betätigt.
 
-## 3.3 Erklärung anhand von Beispielbildern
+
+## 3.3 Abläufe
+
+### 3.3.1 Aktivitätsdiagramm Präsentationsmodus (vereinfacht)
+
+![Aktivität_Präsentation](images/Aktivität_Präsentation.png)
+
+### 3.3.2 Aktivitätsdiagramm Multimediamodus (vereinfacht)
+
+![Aktivität_Multimedia](images/Aktivität_Multimedia.png)
+
+### 3.3.3 Aktivitätsdiagramm Browsermodus (vereinfacht)
+
+![Aktivität_Browser](images/Aktivität_Browser.png)
+
+### 3.3.4 Aktivitätsdiagramm Laserpointermodus (vereinfacht)
+
+![Aktivität_Laserpointer](images/Aktivität_Laserpointer.png)
+
+### 3.3.5 Zustandsdiagramm des gesamten Systems
+
+![Zustandsdiagramm_komplett](images/Zustandsdiagramm_komplett.png)
+
+### 3.3.6 Zustandsdiagramm für Präsentations-, Multimedia- und Browsermodus
+
+![Zustandsdiagramm_RestlicheModi](images/Zustandsdiagramm_RestlicheModi.png)
+
+### 3.3.7 Zustandsdiagramm für den Laserpointermodus
+
+![Zustandsdiagramm_Laserpointer](images/Zustandsdiagramm_Laserpointer.png)
+
+### 3.3.8 Sequenzdiagramm für die Auswahl des Modus
+
+![Sequenz_auswahl](images/Sequenz_auswahl.png)
+
+### 3.3.9 Sequenzdiagramm für das Ausführen einer Geste
+
+![Sequenz_Geste](images/Sequenz_Geste.png)
+
+
+## 3.4 Entwurf
+
+### 3.4.1 Klassendiagramm (vereinfacht)
+
+![Klassendiagramm_reduziert](images/Klassendiagramm_reduziert.png)
+
+### 3.4.2 Klassendiagramm (vollständig)
+
+![Klassendiagramm_komplett](images/Klassendiagramm_komplett.png)
+
+
+## 3.5 Erklärung anhand von Beispielbildern
 
 ### E-Glove (Oberseite)
 
@@ -204,39 +255,6 @@ https://www.reichelt.de/entwicklerboards-kapazitiver-beruehrungssensor-debo-touc
 
 ![handschuh_aktiv_neu](images/photos/handschuh_aktiv_neu.jpg ':size=600')<br>
 
-
-## 3.4 Abläufe
-
-### 3.4.1 Zustandsdiagramm des gesamten Systems
-
-![Zustandsdiagramm_komplett](images/Zustandsdiagramm_komplett.png)
-
-### 3.4.2 Zustandsdiagramm für Präsentations-, Multimedia- und Browsermodus
-
-![Zustandsdiagramm_RestlicheModi](images/Zustandsdiagramm_RestlicheModi.png)
-
-### 3.4.3 Zustandsdiagramm für den Laserpointermodus
-
-![Zustandsdiagramm_Laserpointer](images/Zustandsdiagramm_Laserpointer.png)
-
-### 3.4.4 Sequenzdiagramm für die Auswahl des Modus
-
-![Sequenz_auswahl](images/Sequenz_auswahl.png)
-
-### 3.4.5 Sequenzdiagramm für das Ausführen einer Geste
-
-![Sequenz_Geste](images/Sequenz_Geste.png)
-
-
-## 3.5 Entwurf
-
-### 3.5.1 Klassendiagramm (vereinfacht)
-
-![Klassendiagramm_reduziert](images/Klassendiagramm_reduziert.png)
-
-### 3.5.2 Klassendiagramm (vollständig)
-
-![Klassendiagramm_komplett](images/Klassendiagramm_komplett.png)
 
 ## 3.6 Entwurfsmuster / Programmier-Prinzipien
 
