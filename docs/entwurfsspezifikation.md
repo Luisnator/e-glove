@@ -66,9 +66,9 @@ Unter dem Projektnamen "E-Glove" wird ein Eingabegerät für (Windows) Rechner e
 
 ## 3.1 Systemübersicht
 
-### 3.1.1 Strukturdiagramm
+### 3.1.1 Software-Komponenten (Grundkonzept)
 
-![Strukturdiagramm](images/Strukturdiagramm.png)
+![Komponentendiagramm_SoftwareKonzept](images/Komponentendiagramm_SoftwareKonzept.png)
 
 ### 3.1.2 Blockdefinitionsdiagramm: Physischer Aufbau
 
@@ -259,7 +259,22 @@ Um eine bessere Datenkapselung und Zugriffskontrolle zu ermöglichen, wurde haup
 ## 3.7 Wichtige Bibliotheken, Frameworks und Schnittstellen
 
 ### E-Glove
+- Arduino core for the ESP32
+	- Ermöglicht die Nutzung von Arduino-IDE-spezifischen Funktionen auf dem ESP32.
+	- Hier in Kombination mit der ESP-IDF verwendet.
+	- Repository:
+		- https://github.com/espressif/arduino-esp32
 
+- MPU9250 (Bibliothek)
+	- Bibliothek, die simple Schnittstellen zu dem MPU9250 bietet, der im M5Stack verbaut ist.
+	- Benötigt für die Gestenerkennung.
+	- Repository:
+		- https://github.com/hideakitai/MPU9250
+
+- M5Stack Library
+	- Eine Bibliothek, die die einfache Interaktion mit den eingebauten Funktionen des M5Stack ermöglicht (Knöpfe, Bildschirm...).
+	- Repository:
+		- https://github.com/m5stack/M5Stack
 
 ### CXApp
 
